@@ -8,7 +8,7 @@ export default function ClassPage() {
           title="혁신과 창의성을 경험하라, 지능 로봇 설계 및 프로그래밍"
           author="글 / 최원혁 학생기자 dnjsgur12271029@kaist.ac.kr"
           caption="KAIST 전산학부의 전공과목 ‘지능 로봇 설계 및 프로그래밍’은 기계학습의 기초 개념을 배우고, 로봇 설계 및 프로그래밍에 필요한 기술을 습득할 수 있는 수업이다. 학생들은 팀 프로젝트를 통해 로봇 제어와 인공지능 프로그래밍을 익히고, 기계학습 알고리즘과 로봇의 자율적인 동작을 구현한다. 인공지능 로봇에 관심 있는 예비 KAISTian이 있다면 이 수업에 주목해보자."
-          image="/4-0.jpg"
+          image="/images/23-summer/4-0.jpg"
         />
       }
     >
@@ -24,7 +24,7 @@ export default function ClassPage() {
         실습 시간이 있다.
       </KText>
       <KImage
-        src="/4-1.jpg"
+        src="/images/23-summer/4-1.jpg"
         caption="EV3 로봇의 모습. ©Peter Ekvall/shutterstock"
       />
       <KText>

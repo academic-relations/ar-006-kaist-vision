@@ -48,11 +48,11 @@ export default function JobPage() {
         SK텔레콤의 AI 기술은 고객의 생활 전방위에 걸쳐 있다.
       </KText>
       <KImage
-        src="/3-2.JPG"
+        src="/images/23-summer/3-2.JPG"
         caption="각종 식물로 꾸며진 사내 식당의 모습. 푸른 식물들이 마치 자연 속에 온 것처럼 느껴지게 한다."
       />
       <KImage
-        src="/3-3.JPG"
+        src="/images/23-summer/3-3.JPG"
         caption="SKT타워 스마트팜에서 직접 상추를 재배하고 있다."
       />
       <Subtitle>SKT가 AI 음성 서비스에 강점을 가진 이유</Subtitle>
@@ -136,14 +136,17 @@ export default function JobPage() {
         든다면, 이곳에서 AI 기술 개발의 꿈을 키워나가는 건 어떨까?
       </KText>
       <KImage
-        src="/3-4.JPG"
+        src="/images/23-summer/3-4.JPG"
         caption="31층에 있는 휴게 공간. 박성빈 학생기자가 과자를 챙기고 있다."
       />
       <KImage
-        src="/3-5.JPG"
+        src="/images/23-summer/3-5.JPG"
         caption="박성빈, 서성재 학생기자가 빈백에 누워서 바깥 풍경을 바라보고 있다."
       />
-      <KImage src="/3-6.JPG" caption="다회용 컵을 반납하고 있다." />
+      <KImage
+        src="/images/23-summer/3-6.JPG"
+        caption="다회용 컵을 반납하고 있다."
+      />
       <Subtitle>#미래기술 체험관, T.um</Subtitle>
       <KText>
         티움(T.um)은 SK텔레콤의 최첨단 ICT 체험관이다. 학생기자들은 첨단기술이
@@ -153,9 +156,12 @@ export default function JobPage() {
         미래에 다가올지, 그리고 SK텔레콤의 비전이 무엇인지 궁금하다면 티움에
         방문해보자.
       </KText>
-      <KImage src="/3-7.JPG" caption="티움(T.UM) 체험장 입구에서." />
       <KImage
-        src="/3-8.JPG"
+        src="/images/23-summer/3-7.JPG"
+        caption="티움(T.UM) 체험장 입구에서."
+      />
+      <KImage
+        src="/images/23-summer/3-8.JPG"
         caption="31층에서 바라본 풍경. 빌딩숲이 인상적이다."
       />
       <Subtitle>SKT타워 탐방 소감</Subtitle>
@@ -169,7 +175,7 @@ export default function JobPage() {
         음료수도 마음껏 즐길 수 있었다. 회사가 직원들이 편안한 환경에서 업무를
         볼 수 있도록 배려한 부분을 엿볼 수 있었다.
       </KText>
-      <KImage src="/3-9.JPG" caption="SKT타워 앞에서." />
+      <KImage src="/images/23-summer/3-9.JPG" caption="SKT타워 앞에서." />
     </KArticle>
   );
 }

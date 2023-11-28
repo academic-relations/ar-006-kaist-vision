@@ -131,7 +131,7 @@ export default function CoverPage() {
         않았다며 사람을 대상으로 한 임상시험을 준비할 계획이라고 밝혔다.
       </KText>
       <KImage
-        src="/images/2-3.JPG"
+        src="/images/23-summer/2-3.JPG"
         caption="한국생명공학연구원은 GHB가 검출되면 겔이 노란색에서 빨간색으로 변하는 검출 기술을 개발했다. 미세한 변화는 스마트폰 앱으로도 확인할 수 있다. ⓒ한국생명공학연구원"
       />
       <KText>
