@@ -113,7 +113,7 @@ export const KArticle = (props: KArticleProps) => (
         <Image
           objectFit="cover"
           maxW={{ base: "100%", sm: "200px" }}
-          src="/2-1.png"
+          src="/images/23-summer/2-1.png"
           alt="Caffe Latte"
         />
         <Stack>
@@ -141,7 +141,7 @@ export const KArticle = (props: KArticleProps) => (
         <Image
           objectFit="cover"
           maxW={{ base: "100%", sm: "200px" }}
-          src="/4-0.jpg"
+          src="/images/23-summer/4-0.jpg"
           alt="Caffe Latte"
         />
         <Stack>

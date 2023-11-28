@@ -123,10 +123,13 @@ export default function Layout(props: LayoutProps) {
               <MenuItem>2023년 여름호</MenuItem>
             </MenuList>
           </Menu>
-          <StoryButton title="편집장 인사" href="/23-summer/1" />
-          <StoryButton title="커버스토리" href="/23-summer/2" />
-          <StoryButton title="잡입 수사" href="/23-summer/3" />
-          <StoryButton title="미리 보는 대학수업" href="/23-summer/4" />
+          <StoryButton title="편집장 인사" href="/articles/23-summer/1" />
+          <StoryButton title="커버스토리" href="/articles/23-summer/2" />
+          <StoryButton title="잡입 수사" href="/articles/23-summer/3" />
+          <StoryButton
+            title="미리 보는 대학수업"
+            href="/articles/23-summer/4"
+          />
           <StoryButton title="연구실 Zoom-in" />
           <StoryButton title="돋보기" />
           <StoryButton title="KAISTian 어셈블" />
