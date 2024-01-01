@@ -24,7 +24,7 @@ export default async function ArticlePage({
       {article?.body.map((content: any, index: number) => {
         switch (content.type) {
           case "text":
-            return <KText>{content.text as string}</KText>;
+            return <KText key={index}>{content.text as string}</KText>;
           case "image":
             return (
               <KImage
@@ -34,7 +34,7 @@ export default async function ArticlePage({
               />
             );
           case "subtitle":
-            return <Subtitle>{content.text as string}</Subtitle>;
+            return <Subtitle key={index}>{content.text as string}</Subtitle>;
           default:
             return null;
         }
