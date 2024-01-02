@@ -1,6 +1,4 @@
 import { KArticle, KHeader, KImage, KText, Subtitle } from "../../components";
-import { data } from "../../../api/article/data";
-import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default async function ArticlePage({
@@ -43,12 +41,26 @@ export default async function ArticlePage({
   );
 }
 
+const host =
+  process.env.NODE_ENV === "production"
+    ? "https://vision.sparcs.org"
+    : "http://localhost:3000";
+
 async function getArticle(volume: string, index: string) {
-  const res = await axios.get("http://localhost:3000/api/article", {
+  const res = await axios.get(`${host}/api/article`, {
     params: {
       volume,
       index,
     },
   });
   return res.data;
+}
+
+export async function generateStaticParams() {
+  const res = await axios.get(`${host}/api/volume`);
+
+  return res.data.map((article: any) => ({
+    volume: article.volume,
+    index: article.index,
+  }));
 }
