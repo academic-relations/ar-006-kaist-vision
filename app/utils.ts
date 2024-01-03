@@ -26,7 +26,7 @@ type ArticleSubtitle = {
   text: string;
 };
 
-type ArticleImage = {
+export type ArticleImage = {
   type: "image";
   image: string;
   caption?: string;
