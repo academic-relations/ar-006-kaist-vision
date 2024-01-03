@@ -9,10 +9,10 @@ import {
   Button,
   IconButton,
 } from "@chakra-ui/react";
-import axios from "axios";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Article, host } from "../utils";
+import { data } from "../api/data-23-summer";
 
 type StoryButtonProps = { title: string; href?: string };
 
@@ -110,6 +110,5 @@ export default async function Layout(props: LayoutProps) {
 }
 
 async function getVolume() {
-  const res = await axios.get(`${host}/api/volume`);
-  return res.data;
+  return data;
 }

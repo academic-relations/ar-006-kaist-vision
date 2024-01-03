@@ -1,3 +1,4 @@
+import { data } from "../../../api/data-23-summer";
 import { host } from "../../../utils";
 import { KArticle, KHeader, KImage, KText, Subtitle } from "../../components";
 import axios from "axios";
@@ -43,19 +44,13 @@ export default async function ArticlePage({
 }
 
 async function getArticle(volume: string, index: string) {
-  const res = await axios.get(`${host}/api/article`, {
-    params: {
-      volume,
-      index,
-    },
-  });
-  return res.data;
+  return data.find(
+    (article) => volume === article.volume && index === article.index
+  );
 }
 
 export async function generateStaticParams() {
-  const res = await axios.get(`${host}/api/volume`);
-
-  return res.data.map((article: any) => ({
+  return data.map((article: any) => ({
     volume: article.volume,
     index: article.index,
   }));

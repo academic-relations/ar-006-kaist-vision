@@ -10,9 +10,9 @@ import {
   Box,
   AspectRatio,
 } from "@chakra-ui/react";
-import axios from "axios";
 import { Article, ArticleImage, host } from "./utils";
 import Link from "next/link";
+import { data } from "./api/data-23-summer";
 
 export default async function Home() {
   const articles = await getVolume();
@@ -57,6 +57,5 @@ export default async function Home() {
 }
 
 async function getVolume() {
-  const res = await axios.get(`${host}/api/volume`);
-  return res.data;
+  return data;
 }
