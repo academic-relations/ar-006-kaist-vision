@@ -11,7 +11,6 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import NextImage from "next/image";
 
 type KHeaderProps = {
   subtitle?: string;
@@ -65,7 +64,7 @@ type SubtitleProps = {
 };
 
 export const Subtitle = ({ children }: SubtitleProps) => (
-  <Heading as="h2" fontSize="2xl" my={4}>
+  <Heading as="h2" fontSize="2xl" mb={4} mt={12}>
     {children}
   </Heading>
 );
@@ -78,14 +77,7 @@ type IProps = {
 
 export const KImage = ({ src, caption, width }: IProps) => (
   <Box maxW="500px" w={width} maxHeight="500px" px="auto" py={4}>
-    <NextImage
-      src={src}
-      alt={caption ?? ""}
-      width="0"
-      height="0"
-      sizes="100vw"
-      style={{ width: "100%", height: "auto" }}
-    />
+    <Image src={src} alt={caption ?? ""} maxW="500px" maxHeight="500px" />
     <Text>{caption}</Text>
   </Box>
 );
