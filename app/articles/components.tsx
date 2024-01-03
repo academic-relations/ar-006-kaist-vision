@@ -42,7 +42,6 @@ export const KHeader = (props: KHeaderProps) => (
         w="100%"
         h="400px"
         textAlign="center"
-        alt="기사 대표 이미지"
       />
     )}
     <Text mt={8} px="200px">
