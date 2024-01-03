@@ -1,3 +1,4 @@
+import { host } from "../../../utils";
 import { KArticle, KHeader, KImage, KText, Subtitle } from "../../components";
 import axios from "axios";
 
@@ -40,11 +41,6 @@ export default async function ArticlePage({
     </KArticle>
   );
 }
-
-const host =
-  process.env.NODE_ENV === "production"
-    ? "https://vision.sparcs.org"
-    : "http://localhost:3000";
 
 async function getArticle(volume: string, index: string) {
   const res = await axios.get(`${host}/api/article`, {

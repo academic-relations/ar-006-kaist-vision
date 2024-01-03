@@ -75,38 +75,6 @@ type LayoutProps = {
 export default function Layout(props: LayoutProps) {
   return (
     <>
-      <Box
-        width="100vw"
-        height="52px"
-        flexDir="row"
-        display="flex"
-        alignItems="center"
-        paddingX="24px"
-        bgGradient="linear(to-r, #ff7427, #ffc002)"
-      >
-        <Image src="/icons/kainuri-white.svg" height="24px" alt="kainuri" />
-        <Link href="/">
-          <Heading size="md" color="white" ms="24px">
-            KAIST Vision
-          </Heading>
-        </Link>
-        <Box flex="1" />
-        <Link href="https://kaist.ac.kr" target="_blank">
-          <Heading size="md" color="white" px="24px">
-            KAIST
-          </Heading>
-        </Link>
-        <Link href="https://admission.kaist.ac.kr" target="_blank">
-          <Heading size="md" color="white" px="24px">
-            입학처
-          </Heading>
-        </Link>
-        <Link href="https://kainuri.kaist.ac.kr" target="_blank">
-          <Heading size="md" color="white" px="24px">
-            카이누리
-          </Heading>
-        </Link>
-      </Box>
       <Box w="100vw" h="calc(100%-52px)" display="flex" flexDir="row">
         <Box w="480px" h="100%" padding="16px" display="flex" flexDir="column">
           <Menu>
