@@ -12,7 +12,7 @@ export const data: Article[] = [
     body: [
       {
         type: "image",
-        image: "/images/23-summer/1-1.jpg",
+        image: "/images/23-summer/1-0.jpg",
       },
       {
         type: "text",
@@ -36,7 +36,7 @@ export const data: Article[] = [
       },
       {
         type: "image",
-        image: "/images/23-summer/1-2.jpg",
+        image: "/images/23-summer/1-1.jpg",
       },
     ],
   },
