@@ -1,7 +1,5 @@
-import { data } from "../../../api/data-23-summer";
-import { host } from "../../../utils";
+import { data23spring } from "../../../api/data-23-summer";
 import { KArticle, KHeader, KImage, KText, Subtitle } from "../../components";
-import axios from "axios";
 
 export default async function ArticlePage({
   params,
@@ -44,13 +42,13 @@ export default async function ArticlePage({
 }
 
 async function getArticle(volume: string, index: string) {
-  return data.find(
+  return data23spring.find(
     (article) => volume === article.volume && index === article.index
   );
 }
 
 export async function generateStaticParams() {
-  return data.map((article: any) => ({
+  return data23spring.map((article: any) => ({
     volume: article.volume,
     index: article.index,
   }));

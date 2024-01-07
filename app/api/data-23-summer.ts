@@ -1,6 +1,6 @@
 import { Article } from "../utils";
 
-export const data: Article[] = [
+export const data23spring: Article[] = [
   {
     volume: "23-summer",
     index: "1",

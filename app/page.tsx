@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { Article, ArticleImage, host } from "./utils";
 import Link from "next/link";
-import { data } from "./api/data-23-summer";
+import { data23spring } from "./api/data-23-summer";
 
 export default async function Home() {
   const articles = await getVolume();
@@ -57,5 +57,5 @@ export default async function Home() {
 }
 
 async function getVolume() {
-  return data;
+  return data23spring;
 }

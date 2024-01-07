@@ -12,7 +12,7 @@ import {
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Article, host } from "../utils";
-import { data } from "../api/data-23-summer";
+import { data23spring } from "../api/data-23-summer";
 
 type StoryButtonProps = { title: string; href?: string };
 
@@ -110,5 +110,5 @@ export default async function Layout(props: LayoutProps) {
 }
 
 async function getVolume() {
-  return data;
+  return data23spring;
 }
