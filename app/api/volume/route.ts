@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { data23spring } from "../data-23-summer";
+import { data23summer } from "../../data/data-23-summer";
 
 export async function GET(req: NextRequest) {
-  return NextResponse.json(data23spring);
+  return NextResponse.json(data23summer);
 }

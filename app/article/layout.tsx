@@ -11,8 +11,9 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Article, host } from "../utils";
-import { data23spring } from "../api/data-23-summer";
+import { Article, articleDump } from "../utils";
+import { useParams } from "next/navigation";
+import { get } from "http";
 
 type StoryButtonProps = { title: string; href?: string };
 
@@ -72,8 +73,13 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-export default async function Layout(props: LayoutProps) {
-  const articles = await getVolume();
+export default function Layout(props: LayoutProps) {
+  const currentVolume = useParams().volume as string;
+  const articles = getVolume(currentVolume);
+
+  const volumes = Array.from(
+    new Set(articleDump.map((article) => article.volume))
+  );
 
   return (
     <>
@@ -86,10 +92,16 @@ export default async function Layout(props: LayoutProps) {
               as={Button}
               rightIcon={<ChevronDownIcon />}
             >
-              2023년 여름호
+              {getVolumeName(currentVolume)}
             </MenuButton>
             <MenuList>
-              <MenuItem>2023년 여름호</MenuItem>
+              {volumes.map((volume: string, index: number) => {
+                return (
+                  <Link key={index} href={`/article/${volume}/1`}>
+                    <MenuItem>{getVolumeName(volume)}</MenuItem>
+                  </Link>
+                );
+              })}
             </MenuList>
           </Menu>
           {articles.map((article: Article, index: number) => {
@@ -109,6 +121,22 @@ export default async function Layout(props: LayoutProps) {
   );
 }
 
-async function getVolume() {
-  return data23spring;
+function getVolumeName(volume: string) {
+  let season = "";
+  switch (volume.split("-")[1]) {
+    case "spring":
+      season = "봄";
+      break;
+    case "summer":
+      season = "여름";
+      break;
+    default:
+      season = "오류";
+      break;
+  }
+  return `20${volume.split("-")[0]}년 ${season}호`;
+}
+
+function getVolume(volume: string) {
+  return articleDump.filter((article) => volume === article.volume);
 }

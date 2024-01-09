@@ -1,12 +1,12 @@
-import { data23spring } from "../../../api/data-23-summer";
+import { articleDump } from "../../../utils";
 import { KArticle, KHeader, KImage, KText, Subtitle } from "../../components";
 
-export default async function ArticlePage({
+export default function ArticlePage({
   params,
 }: {
   params: { volume: string; index: string };
 }) {
-  const article = await getArticle(params.volume, params.index);
+  const article = getArticle(params.volume, params.index);
 
   return (
     <KArticle
@@ -41,14 +41,14 @@ export default async function ArticlePage({
   );
 }
 
-async function getArticle(volume: string, index: string) {
-  return data23spring.find(
+function getArticle(volume: string, index: string) {
+  return articleDump.find(
     (article) => volume === article.volume && index === article.index
   );
 }
 
 export async function generateStaticParams() {
-  return data23spring.map((article: any) => ({
+  return articleDump.map((article: any) => ({
     volume: article.volume,
     index: article.index,
   }));

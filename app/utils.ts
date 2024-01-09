@@ -1,3 +1,6 @@
+import { data23spring } from "./data/data-23-spring";
+import { data23summer } from "./data/data-23-summer";
+
 export const host =
   process.env.NODE_ENV === "production"
     ? "https://vision.sparcs.org"
@@ -38,3 +41,5 @@ type ArticleReview = {
   image: string;
   text: string;
 };
+
+export const articleDump: Article[] = [...data23spring, ...data23summer];
