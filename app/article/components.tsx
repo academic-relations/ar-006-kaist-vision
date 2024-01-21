@@ -54,7 +54,7 @@ type PProps = {
 };
 
 export const KText = ({ children }: PProps) => (
-  <Text textAlign="start" my={4}>
+  <Text textAlign="start" whiteSpace="pre-line" my={4}>
     {children}
   </Text>
 );

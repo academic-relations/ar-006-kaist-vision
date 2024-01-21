@@ -130,6 +130,9 @@ function getVolumeName(volume: string) {
     case "summer":
       season = "여름";
       break;
+    case "wintera":
+      season = "가을겨울";
+      break;
     default:
       season = "오류";
       break;
