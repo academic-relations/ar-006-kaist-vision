@@ -1,15 +1,4 @@
-import {
-  Card,
-  CardBody,
-  Heading,
-  Stack,
-  Wrap,
-  WrapItem,
-  Image,
-  Text,
-  Box,
-  AspectRatio,
-} from "@chakra-ui/react";
+import { Card, CardBody, Image } from "@nextui-org/react";
 import { Article, ArticleImage, articleDump } from "./utils";
 import Link from "next/link";
 
@@ -17,11 +6,9 @@ export default async function Home() {
   const articles = await getVolume();
 
   return (
-    <Box w="100%" mx="72px">
-      <Heading mt="72px" mb="36px">
-        2023년 가을겨울호
-      </Heading>
-      <Wrap w="100%" align="center" spacing="24px">
+    <div className="w-full mx-16">
+      <p className="mt-16 mb-9">2023년 가을겨울호</p>
+      <div className="w-full space-x-6 flex flex-wrap">
         {articles
           .filter((article) => article.volume === "23-wintera")
           .map((article: Article, index: number) => {
@@ -36,100 +23,24 @@ export default async function Home() {
             }
 
             return (
-              <WrapItem key={index}>
+              <div key={index}>
                 <Link href={`/article/${article.volume}/${article.index}`}>
-                  <Card w="sm" h="xl">
+                  <Card className="w-sm h-xl">
                     <CardBody>
-                      <AspectRatio ratio={1}>
-                        <Image src={imageUrl} borderRadius="lg" />
-                      </AspectRatio>
-                      <Stack mt="6" spacing="3">
-                        <Heading size="sm">{article.category}</Heading>
-                        <Heading size="md">{article.header.title}</Heading>
-                        <Text>{article.header.author}</Text>
-                      </Stack>
+                      <Image width={100} src={imageUrl} alt="image" />
+                      <div className="mt-6 space-y-1">
+                        <p className="text-sm">{article.category}</p>
+                        <p className="text-md">{article.header.title}</p>
+                        <p>{article.header.author}</p>
+                      </div>
                     </CardBody>
                   </Card>
                 </Link>
-              </WrapItem>
+              </div>
             );
           })}
-      </Wrap>
-      <Heading mt="72px" mb="36px">
-        2023년 여름호
-      </Heading>
-      <Wrap w="100%" align="center" spacing="24px">
-        {articles
-          .filter((article) => article.volume === "23-summer")
-          .map((article: Article, index: number) => {
-            let imageUrl;
-            if (article.header.image) {
-              imageUrl = article.header.image;
-            } else {
-              const firstImage = article.body.find(
-                (item) => item.type === "image"
-              ) as ArticleImage;
-              imageUrl = firstImage?.image;
-            }
-
-            return (
-              <WrapItem key={index}>
-                <Link href={`/article/${article.volume}/${article.index}`}>
-                  <Card w="sm" h="xl">
-                    <CardBody>
-                      <AspectRatio ratio={1}>
-                        <Image src={imageUrl} borderRadius="lg" />
-                      </AspectRatio>
-                      <Stack mt="6" spacing="3">
-                        <Heading size="sm">{article.category}</Heading>
-                        <Heading size="md">{article.header.title}</Heading>
-                        <Text>{article.header.author}</Text>
-                      </Stack>
-                    </CardBody>
-                  </Card>
-                </Link>
-              </WrapItem>
-            );
-          })}
-      </Wrap>
-      <Heading mt="72px" mb="36px">
-        2023년 봄호
-      </Heading>
-      <Wrap w="100%" align="center" spacing="24px">
-        {articles
-          .filter((article) => article.volume === "23-spring")
-          .map((article: Article, index: number) => {
-            let imageUrl;
-            if (article.header.image) {
-              imageUrl = article.header.image;
-            } else {
-              const firstImage = article.body.find(
-                (item) => item.type === "image"
-              ) as ArticleImage;
-              imageUrl = firstImage?.image;
-            }
-
-            return (
-              <WrapItem key={index}>
-                <Link href={`/article/${article.volume}/${article.index}`}>
-                  <Card w="sm" h="xl">
-                    <CardBody>
-                      <AspectRatio ratio={1}>
-                        <Image src={imageUrl} borderRadius="lg" />
-                      </AspectRatio>
-                      <Stack mt="6" spacing="3">
-                        <Heading size="sm">{article.category}</Heading>
-                        <Heading size="md">{article.header.title}</Heading>
-                        <Text>{article.header.author}</Text>
-                      </Stack>
-                    </CardBody>
-                  </Card>
-                </Link>
-              </WrapItem>
-            );
-          })}
-      </Wrap>
-    </Box>
+      </div>
+    </div>
   );
 }
 
