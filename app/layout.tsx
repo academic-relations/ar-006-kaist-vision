@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Providers } from "./providers";
 import { Box, Heading, Image } from "@chakra-ui/react";
 import Link from "next/link";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "KAIST Vision",
@@ -51,6 +52,7 @@ export default function RootLayout({
           </Box>
           {children}
         </Providers>
+        <GoogleAnalytics gaId="G-S5XHBJF9N1" />
       </body>
     </html>
   );
