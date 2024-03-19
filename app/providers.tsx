@@ -1,7 +1,7 @@
 "use client";
 
-import { CacheProvider } from "@chakra-ui/next-js";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
 
 const appleSDGothicNeo = localFont({
@@ -54,7 +54,7 @@ const appleSDGothicNeo = localFont({
   ],
 });
 
-const theme = extendTheme({
+const theme = {
   font: {
     heading: appleSDGothicNeo.style.fontFamily,
     body: appleSDGothicNeo.style.fontFamily,
@@ -66,12 +66,14 @@ const theme = extendTheme({
       700: "#2a69ac",
     },
   },
-});
+};
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <CacheProvider>
-      <ChakraProvider theme={theme}>{children}</ChakraProvider>
-    </CacheProvider>
+    <NextUIProvider>
+      <ThemeProvider attribute="class" defaultTheme="light">
+        {children}
+      </ThemeProvider>
+    </NextUIProvider>
   );
 }

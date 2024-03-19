@@ -1,26 +1,23 @@
 "use client";
-import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
-import {
-  MenuItem,
-  Box,
-  Menu,
-  MenuButton,
-  MenuList,
-  Button,
-  IconButton,
-} from "@chakra-ui/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Article, articleDump } from "../utils";
 import { useParams } from "next/navigation";
-import { get } from "http";
+import {
+  Button,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
+} from "@nextui-org/react";
+import { ChevronUpIcon } from "../../components/icons";
 
 type StoryButtonProps = { title: string; href?: string };
 
 function StoryButton({ title, href }: StoryButtonProps) {
   return (
     <Link href={href ?? "#"}>
-      <Button variant="ghost" w="100%" textAlign="left" alignContent="start">
+      <Button className="w-full" variant="ghost">
         {title}
       </Button>
     </Link>
@@ -54,17 +51,16 @@ function TopButton() {
 
   return (
     showButton && (
-      <Box position="fixed" right="5%" bottom="5%" zIndex={1}>
-        <IconButton
+      <div className="position-fixed right-4 bottom-4 z-10">
+        <Button
           onClick={scrollToTop}
-          isRound={true}
-          variant="solid"
+          isIconOnly
+          color="danger"
           aria-label="Scroll to top"
-          size="xl"
-          fontSize="48px"
-          icon={<ChevronUpIcon />}
-        />
-      </Box>
+        >
+          <ChevronUpIcon />
+        </Button>
+      </div>
     )
   );
 }
@@ -83,27 +79,24 @@ export default function Layout(props: LayoutProps) {
 
   return (
     <>
-      <Box w="100vw" h="calc(100%-52px)" display="flex" flexDir="row">
-        <Box w="480px" h="100%" padding="16px" flexDir="column">
-          <Menu>
-            <MenuButton
-              w="100%"
-              mb="24px"
-              as={Button}
-              rightIcon={<ChevronDownIcon />}
-            >
-              {getVolumeName(currentVolume)}
-            </MenuButton>
-            <MenuList>
+      <div className="w-full min-h-full flex flex-row">
+        <div className="w-120 h-full p-4 flex flex-col">
+          <Dropdown>
+            <DropdownTrigger>
+              <Button className="w-full mb-6" endContent={<ChevronUpIcon />}>
+                {getVolumeName(currentVolume)}
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu>
               {volumes.map((volume: string, index: number) => {
                 return (
-                  <Link key={index} href={`/article/${volume}/1`}>
-                    <MenuItem>{getVolumeName(volume)}</MenuItem>
-                  </Link>
+                  <DropdownItem key={index} href={`/article/${volume}/1`}>
+                    {getVolumeName(volume)}
+                  </DropdownItem>
                 );
               })}
-            </MenuList>
-          </Menu>
+            </DropdownMenu>
+          </Dropdown>
           {articles.map((article: Article, index: number) => {
             return (
               <StoryButton
@@ -113,9 +106,9 @@ export default function Layout(props: LayoutProps) {
               />
             );
           })}
-        </Box>
-        <Box w="calc(100vw-480px)">{props.children}</Box>
-      </Box>
+        </div>
+        <div className="w-full">{props.children}</div>
+      </div>
       <TopButton />
     </>
   );
