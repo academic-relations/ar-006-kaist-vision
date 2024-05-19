@@ -82,6 +82,7 @@ export default async function Home() {
             );
           })}
       </div>
+      <div className="h-32" />
     </div>
   );
 }

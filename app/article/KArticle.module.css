@@ -26,14 +26,14 @@
 
 .caption {
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--nextui-colors-text);
 }
 
 .text {
   margin: 1rem 0;
   line-height: 1.6;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--nextui-colors-text);
 }
 
@@ -61,8 +61,8 @@
 
 .imageCaption {
   margin-top: 0.5rem;
-  font-size: 0.8rem;
-  color: var(--nextui-colors-text);
+  font-size: 1rem;
+  color: hsl(var(--nextui-default-600));
 }
 
 .article {
