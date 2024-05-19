@@ -1,0 +1,112 @@
+.header {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: var(--nextui-colors-text);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.headerImage {
+  margin: 0 auto;
+  width: 80%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--nextui-colors-text);
+}
+
+.text {
+  margin: 1rem 0;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  color: var(--nextui-colors-text);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  font-weight: bold;
+  color: var(--nextui-colors-text);
+}
+
+.imageContainer {
+  text-align: left;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px; /* 최대 높이 제한 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageCaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--nextui-colors-text);
+}
+
+.article {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 5%;
+  background-color: var(--nextui-colors-background);
+}
+
+.content {
+  margin: 2rem 0;
+  padding: 0 5%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.card {
+  overflow: hidden;
+  width: 45%;
+  height: auto;
+  border: 1px solid var(--nextui-colors-border);
+  border-radius: 10px;
+  background-color: var(--nextui-colors-background);
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* 카드 이미지 최대 높이 제한 */
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--nextui-colors-text);
+}
+
+.cardText {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--nextui-colors-text);
+}

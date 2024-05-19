@@ -1,16 +1,6 @@
-import {
-  Box,
-  Heading,
-  Text,
-  Container,
-  Card,
-  Image,
-  Button,
-  CardBody,
-  CardFooter,
-  Stack,
-} from "@chakra-ui/react";
 import Link from "next/link";
+import { Button, Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import styles from "./KArticle.module.css";
 
 type KHeaderProps = {
   subtitle?: string;
@@ -21,32 +11,18 @@ type KHeaderProps = {
 };
 
 export const KHeader = (props: KHeaderProps) => (
-  <Box textAlign="center">
-    {/* <Text fontSize="lg" my="24px">
-      {props.caption}
-    </Text> */}
-    <Heading as="h1" mb={4} mt="48px">
-      <Text as="span">{props.title}</Text>
-    </Heading>
-    <Text fontSize="lg" fontWeight="bold" mb={4}>
-      {props.author}
-    </Text>
+  <div className={styles.header}>
+    <h1 className={styles.title}>{props.title}</h1>
+    <p className={styles.author}>{props.author}</p>
     {props.image && (
       <Image
-        bgImage={props.image}
-        bgBlendMode="saturation"
-        bgSize="cover"
-        bgPosition="center"
-        m={0}
-        w="100%"
-        h="400px"
-        textAlign="center"
+        src={props.image}
+        className={styles.headerImage}
+        alt="Header Image"
       />
     )}
-    <Text mt={8} px="200px">
-      {props.caption}
-    </Text>
-  </Box>
+    {props.caption && <p className={styles.caption}>{props.caption}</p>}
+  </div>
 );
 
 type PProps = {
@@ -54,9 +30,7 @@ type PProps = {
 };
 
 export const KText = ({ children }: PProps) => (
-  <Text textAlign="start" whiteSpace="pre-line" my={4}>
-    {children}
-  </Text>
+  <p className={styles.text}>{children}</p>
 );
 
 type SubtitleProps = {
@@ -64,9 +38,7 @@ type SubtitleProps = {
 };
 
 export const Subtitle = ({ children }: SubtitleProps) => (
-  <Heading as="h2" fontSize="2xl" mb={4} mt={12}>
-    {children}
-  </Heading>
+  <h2 className={styles.subtitle}>{children}</h2>
 );
 
 type IProps = {
@@ -76,10 +48,13 @@ type IProps = {
 };
 
 export const KImage = ({ src, caption, width }: IProps) => (
-  <Box maxW="500px" w={width} maxHeight="500px" px="auto" py={4}>
-    <Image src={src} alt={caption ?? ""} maxW="500px" maxHeight="500px" />
-    <Text>{caption}</Text>
-  </Box>
+  <div
+    className={styles.imageContainer}
+    style={{ width: width ? `${width}px` : "auto" }}
+  >
+    <Image src={src} alt={caption ?? ""} className={styles.image} />
+    {caption && <p className={styles.imageCaption}>{caption}</p>}
+  </div>
 );
 
 type KArticleProps = {
@@ -88,69 +63,45 @@ type KArticleProps = {
 };
 
 export const KArticle = (props: KArticleProps) => (
-  <Box m={0} p={0} width="100%">
+  <div className={styles.article}>
     {props.header}
-    <Container maxW="container.md" py={8}>
-      {props.children}
-    </Container>
-    <Box p={16} flexDir="row" display="flex">
-      <Card
-        direction={{ base: "column", sm: "row" }}
-        overflow="hidden"
-        variant="outline"
-        h={240}
-        w={480}
-      >
+    <div className={styles.content}>{props.children}</div>
+    <div className={styles.footer}>
+      <Card className={styles.card}>
         <Image
-          objectFit="cover"
-          maxW={{ base: "100%", sm: "200px" }}
           src="/images/23-summer/2-1.png"
           alt="Caffe Latte"
+          className={styles.cardImage}
         />
-        <Stack>
-          <CardBody>
-            <Heading size="md">커버스토리</Heading>
-            <Text py="2">마약, 쾌락과 파멸 사이</Text>
-          </CardBody>
-          <CardFooter>
-            <Link href="/articles/23-summer/2">
-              <Button variant="solid" colorScheme="blue">
-                이전글 보러가기
-              </Button>
-            </Link>
-          </CardFooter>
-        </Stack>
+        <CardBody>
+          <h3 className={styles.cardTitle}>커버스토리</h3>
+          <p className={styles.cardText}>마약, 쾌락과 파멸 사이</p>
+        </CardBody>
+        <CardFooter>
+          <Link href="/articles/23-summer/2">
+            <Button variant="solid">이전글 보러가기</Button>
+          </Link>
+        </CardFooter>
       </Card>
-      <Box flex={1} />
-      <Card
-        direction={{ base: "column", sm: "row" }}
-        overflow="hidden"
-        variant="outline"
-        h={240}
-        w={480}
-      >
+      <div className="flex flex-1" />
+      <Card className={styles.card}>
         <Image
-          objectFit="cover"
-          maxW={{ base: "100%", sm: "200px" }}
           src="/images/23-summer/4-0.jpg"
           alt="Caffe Latte"
+          className={styles.cardImage}
         />
-        <Stack>
-          <CardBody>
-            <Heading size="md">미리 보는 대학수업</Heading>
-            <Text py="2">
-              혁신과 창의성을 경험하라, 지능 로봇 설계 및 프로그래밍
-            </Text>
-          </CardBody>
-          <CardFooter>
-            <Link href="/articles/23-summer/2">
-              <Button variant="solid" colorScheme="blue">
-                다음글 보러가기
-              </Button>
-            </Link>
-          </CardFooter>
-        </Stack>
+        <CardBody>
+          <h3 className={styles.cardTitle}>미리 보는 대학수업</h3>
+          <p className={styles.cardText}>
+            혁신과 창의성을 경험하라, 지능 로봇 설계 및 프로그래밍
+          </p>
+        </CardBody>
+        <CardFooter>
+          <Link href="/articles/23-summer/2">
+            <Button variant="solid">다음글 보러가기</Button>
+          </Link>
+        </CardFooter>
       </Card>
-    </Box>
-  </Box>
+    </div>
+  </div>
 );
