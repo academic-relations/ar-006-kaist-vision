@@ -10,7 +10,8 @@ import {
   DropdownMenu,
   DropdownTrigger,
 } from "@nextui-org/react";
-import { ChevronUpIcon } from "../../components/icons";
+import { ChevronDownIcon, ChevronUpIcon } from "../../components/icons";
+import styles from "./Layout.module.css";
 
 type ArticleButtonProps = { title: string; href?: string };
 
@@ -81,34 +82,39 @@ export default function Layout(props: LayoutProps) {
   return (
     <>
       <div className={`w-full min-h-full flex flex-row`}>
-        <div className={`w-160 h-full p-4 flex flex-col`}>
-          <Dropdown>
-            <DropdownTrigger>
-              <Button className={`w-full mb-6`} endContent={<ChevronUpIcon />}>
-                {getVolumeName(currentVolume)}
-              </Button>
-            </DropdownTrigger>
-            <DropdownMenu>
-              {volumes.map((volume: string, index: number) => {
-                return (
-                  <DropdownItem key={index} href={`/article/${volume}/1`}>
-                    {getVolumeName(volume)}
-                  </DropdownItem>
-                );
-              })}
-            </DropdownMenu>
-          </Dropdown>
-          {articles.map((article: Article, index: number) => {
-            return (
-              <ArticleButton
-                key={index}
-                title={article.category}
-                href={`/article/${article.volume}/${article.index}`}
-              />
-            );
-          })}
+        <div className={styles.sidebar}>
+          <div className={styles.sidebarContent}>
+            <Dropdown>
+              <DropdownTrigger>
+                <Button
+                  className={`w-full mb-6`}
+                  endContent={<ChevronDownIcon />}
+                >
+                  {getVolumeName(currentVolume)}
+                </Button>
+              </DropdownTrigger>
+              <DropdownMenu>
+                {volumes.map((volume: string, index: number) => {
+                  return (
+                    <DropdownItem key={index} href={`/article/${volume}/1`}>
+                      {getVolumeName(volume)}
+                    </DropdownItem>
+                  );
+                })}
+              </DropdownMenu>
+            </Dropdown>
+            {articles.map((article: Article, index: number) => {
+              return (
+                <ArticleButton
+                  key={index}
+                  title={article.category}
+                  href={`/article/${article.volume}/${article.index}`}
+                />
+              );
+            })}
+          </div>
         </div>
-        <div className={`w-full`}>{props.children}</div>
+        <div className={styles.mainContent}>{props.children}</div>
       </div>
       <TopButton />
     </>

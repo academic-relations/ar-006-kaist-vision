@@ -14,6 +14,22 @@ export const ChevronUpIcon = () => (
   </svg>
 );
 
+export const ChevronDownIcon = () => (
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    height="1em"
+    role="presentation"
+    viewBox="0 0 512 512"
+    width="1em"
+  >
+    <path
+      fill="currentColor"
+      d="M278.6 406.6c-12.5 12.5-32.8 12.5-45.3 0l-192-192c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L256 338.7 425.4 169.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-192 192z"
+    />
+  </svg>
+);
+
 export const MoonIcon = () => (
   <svg
     aria-hidden="true"

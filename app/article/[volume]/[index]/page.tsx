@@ -13,7 +13,7 @@ export default function ArticlePage({
       header={
         <KHeader
           title={article?.header.title ?? "제목 없음"}
-          author={article?.header.author ?? "작성자 없음"}
+          author={article?.header.author ?? ""}
           image={article?.header.image}
           caption={article?.header.caption}
         />
