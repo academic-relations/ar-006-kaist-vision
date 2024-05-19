@@ -28,13 +28,22 @@ export default function RootLayout({
         <Providers>
           <Navbar isBordered>
             <NavbarBrand>
-              <Image
-                src="/icons/kainuri-white.svg"
-                height="24px"
-                alt="kainuri"
-              />
-              <Link href="/">
-                <p className="font-bold text-inherit">KAIST Vision</p>
+              <Link
+                href="/"
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignContent: "center",
+                }}
+              >
+                <Image
+                  src="/icons/kainuri-black.svg"
+                  height="36px"
+                  width="36px"
+                  alt="kainuri"
+                  style={{ borderRadius: "0" }}
+                />
+                <p className="font-bold text-inherit ms-4">KAIST Vision</p>
               </Link>
             </NavbarBrand>
             <NavbarContent className="hidden sm:flex gap-4" justify="center">

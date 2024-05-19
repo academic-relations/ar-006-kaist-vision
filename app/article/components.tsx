@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button, Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import styles from "./KArticle.module.css";
 
 type KHeaderProps = {
   subtitle?: string;
@@ -10,17 +11,17 @@ type KHeaderProps = {
 };
 
 export const KHeader = (props: KHeaderProps) => (
-  <div>
-    <title className="mb-4 mt-12">{props.title}</title>
-    <p className="font-lg font-bold mb-4">{props.author}</p>
+  <div className={styles.header}>
+    <h1 className={styles.title}>{props.title}</h1>
+    <p className={styles.author}>{props.author}</p>
     {props.image && (
       <Image
         src={props.image}
-        className="m-0 w-full h-100"
+        className={styles.headerImage}
         alt="Header Image"
       />
     )}
-    <p className="mt-8 px-52">{props.caption}</p>
+    {props.caption && <p className={styles.caption}>{props.caption}</p>}
   </div>
 );
 
@@ -29,7 +30,7 @@ type PProps = {
 };
 
 export const KText = ({ children }: PProps) => (
-  <p className="my-4 whitespace-pre-line">{children}</p>
+  <p className={styles.text}>{children}</p>
 );
 
 type SubtitleProps = {
@@ -37,7 +38,7 @@ type SubtitleProps = {
 };
 
 export const Subtitle = ({ children }: SubtitleProps) => (
-  <title className="font-2xl mb-4 mt-12">{children}</title>
+  <h2 className={styles.subtitle}>{children}</h2>
 );
 
 type IProps = {
@@ -47,9 +48,12 @@ type IProps = {
 };
 
 export const KImage = ({ src, caption, width }: IProps) => (
-  <div className="max-w-120 max-h-120 px-auto py-1">
-    <Image src={src} alt={caption ?? ""} className="max-w-120 max-h-120" />
-    <p>{caption}</p>
+  <div
+    className={styles.imageContainer}
+    style={{ width: width ? `${width}px` : "auto" }}
+  >
+    <Image src={src} alt={caption ?? ""} className={styles.image} />
+    {caption && <p className={styles.imageCaption}>{caption}</p>}
   </div>
 );
 
@@ -59,15 +63,19 @@ type KArticleProps = {
 };
 
 export const KArticle = (props: KArticleProps) => (
-  <div className="m-0 p-0 w-full">
+  <div className={styles.article}>
     {props.header}
-    <div className="mx-md py-8">{props.children}</div>
-    <div className="p-16 flex flex-row">
-      <Card className="overflow-hidden w-120 h-60">
-        <Image src="/images/23-summer/2-1.png" alt="Caffe Latte" />
+    <div className={styles.content}>{props.children}</div>
+    <div className={styles.footer}>
+      <Card className={styles.card}>
+        <Image
+          src="/images/23-summer/2-1.png"
+          alt="Caffe Latte"
+          className={styles.cardImage}
+        />
         <CardBody>
-          <title className="font-md">커버스토리</title>
-          <p className="py-2">마약, 쾌락과 파멸 사이</p>
+          <h3 className={styles.cardTitle}>커버스토리</h3>
+          <p className={styles.cardText}>마약, 쾌락과 파멸 사이</p>
         </CardBody>
         <CardFooter>
           <Link href="/articles/23-summer/2">
@@ -76,11 +84,15 @@ export const KArticle = (props: KArticleProps) => (
         </CardFooter>
       </Card>
       <div className="flex flex-1" />
-      <Card className="overflow-hidden w-120 h-60">
-        <Image src="/images/23-summer/4-0.jpg" alt="Caffe Latte" />
+      <Card className={styles.card}>
+        <Image
+          src="/images/23-summer/4-0.jpg"
+          alt="Caffe Latte"
+          className={styles.cardImage}
+        />
         <CardBody>
-          <title className="font-md">미리 보는 대학수업</title>
-          <p className="py-2">
+          <h3 className={styles.cardTitle}>미리 보는 대학수업</h3>
+          <p className={styles.cardText}>
             혁신과 창의성을 경험하라, 지능 로봇 설계 및 프로그래밍
           </p>
         </CardBody>

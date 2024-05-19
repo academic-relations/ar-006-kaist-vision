@@ -12,12 +12,12 @@ import {
 } from "@nextui-org/react";
 import { ChevronUpIcon } from "../../components/icons";
 
-type StoryButtonProps = { title: string; href?: string };
+type ArticleButtonProps = { title: string; href?: string };
 
-function StoryButton({ title, href }: StoryButtonProps) {
+function ArticleButton({ title, href }: ArticleButtonProps) {
   return (
     <Link href={href ?? "#"}>
-      <Button className="w-full" variant="ghost">
+      <Button className={`w-full text-left`} variant="light">
         {title}
       </Button>
     </Link>
@@ -51,14 +51,15 @@ function TopButton() {
 
   return (
     showButton && (
-      <div className="position-fixed right-4 bottom-4 z-10">
+      <div className={`fixed right-16 bottom-16 z-10`}>
         <Button
           onClick={scrollToTop}
-          isIconOnly
-          color="danger"
+          color="primary"
           aria-label="Scroll to top"
+          size="lg"
+          endContent={<ChevronUpIcon />}
         >
-          <ChevronUpIcon />
+          맨 위로
         </Button>
       </div>
     )
@@ -79,11 +80,11 @@ export default function Layout(props: LayoutProps) {
 
   return (
     <>
-      <div className="w-full min-h-full flex flex-row">
-        <div className="w-120 h-full p-4 flex flex-col">
+      <div className={`w-full min-h-full flex flex-row`}>
+        <div className={`w-160 h-full p-4 flex flex-col`}>
           <Dropdown>
             <DropdownTrigger>
-              <Button className="w-full mb-6" endContent={<ChevronUpIcon />}>
+              <Button className={`w-full mb-6`} endContent={<ChevronUpIcon />}>
                 {getVolumeName(currentVolume)}
               </Button>
             </DropdownTrigger>
@@ -99,7 +100,7 @@ export default function Layout(props: LayoutProps) {
           </Dropdown>
           {articles.map((article: Article, index: number) => {
             return (
-              <StoryButton
+              <ArticleButton
                 key={index}
                 title={article.category}
                 href={`/article/${article.volume}/${article.index}`}
@@ -107,7 +108,7 @@ export default function Layout(props: LayoutProps) {
             );
           })}
         </div>
-        <div className="w-full">{props.children}</div>
+        <div className={`w-full`}>{props.children}</div>
       </div>
       <TopButton />
     </>

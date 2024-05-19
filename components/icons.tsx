@@ -4,7 +4,7 @@ export const ChevronUpIcon = () => (
     focusable="false"
     height="1em"
     role="presentation"
-    viewBox="0 0 24 24"
+    viewBox="0 0 512 512"
     width="1em"
   >
     <path
