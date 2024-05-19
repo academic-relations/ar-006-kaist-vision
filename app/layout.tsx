@@ -11,6 +11,7 @@ import {
   NavbarItem,
 } from "@nextui-org/react";
 import { ThemeSwitch } from "../components/theme-switch";
+import styles from "./Layout.module.css"; // CSS 모듈 가져오기
 
 export const metadata: Metadata = {
   title: "KAIST Vision",
@@ -67,7 +68,19 @@ export default function RootLayout({
               <ThemeSwitch />
             </NavbarContent>
           </Navbar>
-          {children}
+          <main>{children}</main>
+          <footer className={styles.footer}>
+            <div className={styles.footerContent}>
+              <p>
+                우)34141 대전광역시 유성구 대학로 291 KAIST, 창의학습관(E11)
+                505호
+              </p>
+              <p>
+                COPYRIGHT (C) {new Date().getFullYear()} by KAIST Student
+                Ambassador KAINURI. ALL RIGHTS RESERVED.
+              </p>
+            </div>
+          </footer>
         </Providers>
         <GoogleAnalytics gaId="G-S5XHBJF9N1" />
       </body>
