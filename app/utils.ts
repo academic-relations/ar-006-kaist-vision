@@ -34,6 +34,7 @@ export type ArticleImage = {
   type: "image";
   image: string;
   caption?: string;
+  width?: number;
 };
 
 type ArticleReview = {

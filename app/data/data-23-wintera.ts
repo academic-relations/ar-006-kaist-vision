@@ -38,6 +38,7 @@ export const data23wintera: Article[] = [
       {
         type: "image",
         image: "/images/23-wintera/1-1.jpg",
+        width: 200,
       },
     ],
   },
