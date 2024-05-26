@@ -1365,91 +1365,18 @@ export const data23wintera: Article[] = [
     header: {
       title: "우당탕탕 수강신청 in KAIST",
       author: "글, 사진 / 김준서 학생기자 joonseo@kaist.ac.kr",
+      image: "/images/23-wintera/13-0.png",
       caption:
         "KAIST 학생들은 매 학기 수강 신청을 한다. 수강 신청은 처음에는 추첨으로 진행되며, 과목 추첨이 완료된 뒤에 선착순으로 수강 변경을 해야 해 경쟁이 엄청나다. 해킹을 통해 수강 신청에 성공하려는 지혁과, 성실히 수강 변경에 도전하는 소예의 생활을 엿보자.",
     },
     body: [
       {
         type: "image",
-        image: "/images/23-wintera/13-1.jpg",
-        caption:
-          "<KAIST의 수강 신청>\n1. 원하는 과목 신청(선착순 X)\n2. 신청한 과목 추첨\n3. 선착순 수강 변경\n교수님: KAIST의 수강 신청은 이렇게 진행된다네.",
+        image: "/images/23-wintera/13-1.png",
       },
       {
         type: "image",
-        image: "/images/23-wintera/13-2.jpg",
-        caption: "얘들아 수강 신청 결과 나왔대!",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-3.jpg",
-        caption: "으악! 난 진짜 큰일났어ㅠㅠ",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-4.jpg",
-        caption:
-          "얘들아 난 24학점 다 붙었어!\n아 나 8학점 남았어. 큰일이야.\n야 나는 3학점 남았어.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-5.jpg",
-        caption:
-          "어차피 망한 거, 해킹해서 시간표를 채워야겠어!\n수강 변경 때 꼭 PC방에서 선착순 신청에 성공해야지.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-6.jpg",
-        caption: "해킹 공부 중인 지혁",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-7.jpg",
-        caption:
-          "반면, 소예는 교수님께 예외 신청 메일을 보낸다.\n교수님께서 꼭 받아주시겠지?\n※KAIST에는 수강 신청에 실패했지만 과목을 수강하기를 원하는 학생들이 교수님께 메일을 보내 예외적으로 신청하는 경우가 있는데, 이를 예외 신청이라 한다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-8.jpg",
-        caption:
-          "드디어 수강 변경 날! 소예는 아침 일찍 PC방에 도착한다.\n예외 신청도 열심히 해서 성공했으니까, 수강 변경도 꼭 성공할 거야!",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-9.jpg",
-        caption: "수강 변경 중",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-10.jpg",
-        caption: "좋아! 원하는 과목을 모두 잡았어! 이제 18학점 들을 수 있다!",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-11.jpg",
-        caption: "반면, 해킹하겠다던 지혁은 시간도 모르고 자는 중이다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-12.jpg",
-        caption:
-          "지혁아! 너 설마 지금 일어났어? 너 해킹한다며! 시간 끝났는데….\n으악! 큰일났다!",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-13.jpg",
-        caption: "난 이제 망했어. 휴학해야 하나….",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-14.jpg",
-        caption:
-          "[교수님께 온 메일]\nFrom. 교수님\n지혁 학생, 해킹을 시도했군요. 내일 아침 제 사무실로 오세요.\n다음부턴 그냥 수강변경 열심히 해야지.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/13-15.jpg",
-        caption: "역시 정직한 게 최고야!",
+        image: "/images/23-wintera/13-2.png",
       },
     ],
   },
