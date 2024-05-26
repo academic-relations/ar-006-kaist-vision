@@ -1,4 +1,4 @@
-import { Card, CardBody, Image } from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import NextImage from "next/image";
 import { Article, ArticleImage, articleDump } from "./utils";
 import Link from "next/link";
@@ -28,11 +28,9 @@ export default async function Home() {
           </p>
         </div>
         <div className={styles.imageContainer}>
-          <NextImage
+          <Image
             src="/images/cover.jpeg"
             alt="KAIST 비전"
-            layout="fill"
-            objectFit="cover"
             className={styles.image}
           />
         </div>
@@ -40,7 +38,7 @@ export default async function Home() {
       <p className="text-2xl font-semibold mt-16 mb-9 text-left">
         2023년 가을겨울호
       </p>
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-left gap-6">
         {articles
           .filter((article) => article.volume === "23-wintera")
           .map((article: Article, index: number) => {
@@ -58,13 +56,16 @@ export default async function Home() {
               <div key={index} className="max-w-sm w-full lg:w-1/3">
                 <Link href={`/article/${article.volume}/${article.index}`}>
                   <Card className="h-full shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="aspect-w-16 aspect-h-9">
+                    <CardHeader
+                      className="overflow-hidden rounded-t-lg"
+                      style={{ height: "240px" }}
+                    >
                       <Image
                         src={imageUrl}
-                        alt="image"
-                        className="w-full h-full object-cover rounded-t-md"
+                        alt="기사 이미지"
+                        style={{ objectFit: "cover" }}
                       />
-                    </div>
+                    </CardHeader>
                     <CardBody className="p-4">
                       <div className="space-y-2">
                         <p className="text-sm text-gray-500">
