@@ -45,14 +45,22 @@ type KImageProps = {
   src: string;
   caption?: string;
   width?: number;
+  full_width?: boolean;
 };
 
-export const KImage = ({ src, caption, width }: KImageProps) => (
+export const KImage = ({ src, caption, width, full_width }: KImageProps) => (
   <div
     className={styles.imageContainer}
-    style={{ width: width ? `${width}px` : "auto" }}
+    style={{ width: full_width ? "1024px" : width ? `${width}px` : "auto" }}
   >
-    <Image src={src} alt={caption ?? ""} className={styles.image} />
+    <Image
+      src={src}
+      alt={caption ?? ""}
+      className={styles.image}
+      width={full_width ? "100%" : width || "auto"}
+      height={full_width ? "auto" : "500px"}
+      style={{ width: "100%", height: "auto" }}
+    />
     {caption && <p className={styles.imageCaption}>{caption}</p>}
   </div>
 );

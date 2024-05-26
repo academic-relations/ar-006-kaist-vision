@@ -53,10 +53,10 @@
 .image {
   max-width: 100%;
   height: auto;
-  max-height: 500px; /* 최대 높이 제한 */
   display: block;
   margin-left: auto;
   margin-right: auto;
+  object-fit: contain;
 }
 
 .imageCaption {
@@ -76,6 +76,7 @@
 .content {
   margin: 2rem 0;
   padding: 0 5%;
+  min-height: 40vh;
 }
 
 .footer {

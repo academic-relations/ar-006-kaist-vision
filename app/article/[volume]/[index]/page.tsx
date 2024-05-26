@@ -37,6 +37,7 @@ export default function ArticlePage({
                 src={content.image!}
                 caption={content.caption}
                 width={content.width}
+                full_width={content.full_width}
               />
             );
           case "subtitle":
