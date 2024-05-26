@@ -64,8 +64,10 @@ export const KImage = ({ src, caption, width, full_width }: KImageProps) => (
       alt={caption ?? ""}
       className={styles.image}
       width={full_width ? "100%" : width || "auto"}
-      height={full_width ? "auto" : "500px"}
-      style={{ width: "100%", height: "auto" }}
+      style={{
+        height: "auto",
+        maxHeight: full_width ? "auto" : "500px",
+      }}
     />
     {caption && <p className={styles.imageCaption}>{caption}</p>}
   </div>
@@ -89,9 +91,43 @@ export const KReview = ({ name, image, text }: KReviewProps) => (
   </div>
 );
 
+type KNeighborProps = {
+  title: string;
+  category: string;
+  link: string;
+  firstImage: string;
+};
+
+type KNeighborCardProps = { isPrevious?: boolean } & KNeighborProps;
+
+const KNeighborCard = (props: KNeighborCardProps) => (
+  <Card className={styles.card}>
+    <Image
+      src={props.firstImage}
+      alt="기사 이미지"
+      className={styles.cardImage}
+    />
+    <CardBody>
+      <h3 className={styles.cardTitle}>{props.category}</h3>
+      <p className={styles.cardText}>{props.title}</p>
+    </CardBody>
+    <CardFooter>
+      <Link href={props.link}>
+        <Button variant="solid">
+          {props.isPrevious ? "이전글 보러가기" : "다음글 보러가기"}
+        </Button>
+      </Link>
+    </CardFooter>
+  </Card>
+);
+
 type KArticleProps = {
   children: React.ReactNode;
   header: React.ReactNode;
+  neighbors: {
+    previous?: KNeighborProps;
+    next?: KNeighborProps;
+  };
 };
 
 export const KArticle = (props: KArticleProps) => (
@@ -99,41 +135,11 @@ export const KArticle = (props: KArticleProps) => (
     {props.header}
     <div className={styles.content}>{props.children}</div>
     <div className={styles.footer}>
-      <Card className={styles.card}>
-        <Image
-          src="/images/23-summer/2-1.png"
-          alt="Caffe Latte"
-          className={styles.cardImage}
-        />
-        <CardBody>
-          <h3 className={styles.cardTitle}>커버스토리</h3>
-          <p className={styles.cardText}>마약, 쾌락과 파멸 사이</p>
-        </CardBody>
-        <CardFooter>
-          <Link href="/articles/23-summer/2">
-            <Button variant="solid">이전글 보러가기</Button>
-          </Link>
-        </CardFooter>
-      </Card>
+      {props.neighbors.previous && (
+        <KNeighborCard {...props.neighbors.previous} isPrevious />
+      )}
       <div className="flex flex-1" />
-      <Card className={styles.card}>
-        <Image
-          src="/images/23-summer/4-0.jpg"
-          alt="Caffe Latte"
-          className={styles.cardImage}
-        />
-        <CardBody>
-          <h3 className={styles.cardTitle}>미리 보는 대학수업</h3>
-          <p className={styles.cardText}>
-            혁신과 창의성을 경험하라, 지능 로봇 설계 및 프로그래밍
-          </p>
-        </CardBody>
-        <CardFooter>
-          <Link href="/articles/23-summer/2">
-            <Button variant="solid">다음글 보러가기</Button>
-          </Link>
-        </CardFooter>
-      </Card>
+      {props.neighbors.next && <KNeighborCard {...props.neighbors.next} />}
     </div>
   </div>
 );

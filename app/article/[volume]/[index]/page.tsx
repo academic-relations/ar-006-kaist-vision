@@ -1,4 +1,5 @@
-import { articleDump } from "../../../utils";
+import { link } from "fs";
+import { Article, ArticleImage, articleDump } from "../../../utils";
 import {
   KArticle,
   KHeader,
@@ -26,6 +27,7 @@ export default function ArticlePage({
           image_caption={article?.header.image_caption}
         />
       }
+      neighbors={getArticleWithNeighbors(params.volume, params.index)}
     >
       {article?.body.map((content: any, index: number) => {
         switch (content.type) {
@@ -65,6 +67,55 @@ function getArticle(volume: string, index: string) {
     (article) => volume === article.volume && index === article.index
   );
 }
+
+const getArticleWithNeighbors = (volume: string, index: string) => {
+  const currentArticle = articleDump.find(
+    (article) => article.volume === volume && article.index === index
+  );
+  if (!currentArticle) {
+    return { previous: undefined, next: undefined };
+  }
+  const currentVolume = articleDump.filter((item) => item.volume === volume);
+  const currentIndex = currentVolume.indexOf(currentArticle);
+
+  const previousArticle =
+    currentIndex > 0 ? currentVolume[currentIndex - 1] : undefined;
+  const nextArticle =
+    currentIndex < articleDump.length - 1
+      ? currentVolume[currentIndex + 1]
+      : undefined;
+
+  return {
+    previous: previousArticle
+      ? {
+          title: previousArticle.header.title,
+          category: previousArticle.category,
+          link: `/article/${previousArticle.volume}/${previousArticle.index}`,
+          firstImage:
+            previousArticle.header.image ??
+            (
+              previousArticle.body.find(
+                (item: any) => item.type === "image"
+              ) as ArticleImage
+            )?.image,
+        }
+      : undefined,
+    next: nextArticle
+      ? {
+          title: nextArticle.header.title,
+          category: nextArticle.category,
+          link: `/article/${nextArticle.volume}/${nextArticle.index}`,
+          firstImage:
+            nextArticle.header.image ??
+            (
+              nextArticle.body.find(
+                (item) => item.type === "image"
+              ) as ArticleImage
+            )?.image,
+        }
+      : undefined,
+  };
+};
 
 export async function generateStaticParams() {
   return articleDump.map((article: any) => ({

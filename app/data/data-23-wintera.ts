@@ -50,7 +50,6 @@ export const data23wintera: Article[] = [
       title: "과학자의 빛과 어둠, 오펜하이머와 원자폭탄",
       author:
         "글 / 강준혁 학생기자 lawbrighter@kaist.ac.kr, 최건 학생기자 choiriley2004@kaist.ac.kr, 홍준만 학생기자 godwin3232@kaist.ac.kr",
-      image: "/images/23-wintera/2-0.jpg",
       caption:
         "때는 제2차 세계대전이 한창이던 1942년, 미국을 중심으로 한 연합국은 닐스 보어, 엔리코 페르미, 존 폰 노이만, 리처드 파인만 등 당대 최고의 물리학자들을 비밀리에 불러 모았다. 독일보다 먼저 원자폭탄을 개발하기 위한 ‘맨해튼 프로젝트’의 막이 오른 순간이었다. 맨해튼 프로젝트는 자그마치 20억 달러를 쏟아붓고, 13만 명의 과학기술자가 참여한 초거대 프로젝트였다. 그리고 이 프로젝트를 성공적으로 이끈 리더가 바로 줄리어스 로버트 오펜하이머였다. 오펜하이머, 그는 원자폭탄으로 세상에 어떤 바람을 불러왔을까.",
     },
@@ -454,12 +453,9 @@ export const data23wintera: Article[] = [
       caption:
         "정보는 인류의 삶에서 필수 불가결한 요소이자 강력한 무기로 자리 잡았다. 하지만 정보의 양은 기하급수적으로 늘어나는 반면, 정보를 처리하는 속도는 이를 따라가지 못하고 있다. 몇몇 물리학자들은 이를 해결할 방법이 ‘자석’에 있다고 생각하며 ‘스핀트로닉스’라는 분야를 탄생시켰다. 새로운 정보화 시대를 향한 도약을 준비하는 KAIST 응용 스핀트로닉스 연구실을 만나보자.",
       image: "/images/23-wintera/5-0.jpg",
+      image_caption: "ⓒshutterstock.",
     },
     body: [
-      {
-        type: "text",
-        text: "ⓒshutterstock.",
-      },
       {
         type: "subtitle",
         text: "‘스핀’의 발견, 그 시작은 자석이었다",
@@ -1373,10 +1369,12 @@ export const data23wintera: Article[] = [
       {
         type: "image",
         image: "/images/23-wintera/13-1.png",
+        full_width: true,
       },
       {
         type: "image",
         image: "/images/23-wintera/13-2.png",
+        full_width: true,
       },
     ],
   },
