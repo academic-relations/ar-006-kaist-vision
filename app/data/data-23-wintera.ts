@@ -68,6 +68,11 @@ export const data23wintera: Article[] = [
         text: "하버드대에서 화학을 전공했지만, 물리학에 더 관심을 갖게 된 오펜하이머는 영국 케임브리지대를 거쳐 독일 괴팅겐대에서 물리학 박사 학위를 받았다. 당시 독일은 이론물리학의 중심지였기에 오펜하이머는 당대 최고의 물리학자들과 연구를 함께할 수 있었다. 미국으로 돌아온 오펜하이머는 캘리포니아공과대와 UC버클리에서 강의를 시작했다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/2-1.jpg",
+        caption: "레슬리 그로브스 대령(왼쪽)과 오펜하이머(오른쪽). ⓒwikimedia",
+      },
+      {
         type: "subtitle",
         text: "맨해튼 프로젝트를 이끌어 원자폭탄 개발에 성공하다",
       },
@@ -80,8 +85,20 @@ export const data23wintera: Article[] = [
         text: "그를 발탁한 사람은 맨해튼 프로젝트의 총괄을 맡았던 미국 육군 레슬리 그로브스 대령이다. 그로브스 대령은 폭넓은 지식을 바탕으로 핵심을 정확히 파악하는 오펜하이머의 능력을 높게 평가했다. 그의 평가는 정확했는데, 오펜하이머는 타고난 리더였다. 그는 당대 최고의 과학자들을 불러 모아 적재적소에 인력을 투입하며 프로젝트를 진두지휘해 나갔다. 마침내 1945년 7월 16일, 뉴멕시코의 폭격실험장에 버섯구름이 선명하게 솟아올랐다. 오펜하이머를 포함한 맨해튼 프로젝트의 과학자들이 인류 최초의 원자폭탄 실험에 성공한 것이다. 폭발로 격동하는 실험장에서 원자폭탄의 성공을 지켜본 오펜하이머는 “나는 이제 죽음이요, 세상의 파괴자가 되었다(Now I am become Death, the destroyer of worlds).”라는 말을 남겼다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/2-2.jpg",
+        caption:
+          "1946년 7월 16일, 최초의 원자폭탄 폭발 실험이 성공했다. ⓒwikimedia",
+      },
+      {
         type: "text",
         text: "그리고 1945년 8월 6일 오전 8시 15분, ‘리틀 보이(Little Boy)’라는 이름의 원자폭탄이 일본 히로시마에 떨어졌다. 당시 히로시마는 군수품 공장과 일본군 주둔지가 있는 군사적 요충지였다. 원자폭탄 투하로 히로시마에서 14만 명의 사망자가 발생했다. 일본이 곧바로 항복하지 않자, 미국은 3일 뒤인 8월 9일 11시 2분 ‘팻맨(Fat Man)’이라는 이름의 두 번째 원자폭탄을 일본의 나가사키에 투하했다. 나가사키에서는 7만 명의 사망자가 발생했고, 더 이상 버티지 못한 일본은 8월 15일 항복을 선언했다. 이로써 제2차 세계대전이 막을 내렸다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/2-3.jpg",
+        caption:
+          "1945년 8월 9일 일본 나가사키에 떨어진 원자폭탄의 모습. ⓒwikimedia",
       },
       {
         type: "subtitle",
@@ -90,6 +107,11 @@ export const data23wintera: Article[] = [
       {
         type: "text",
         text: "제2차 세계대전이 끝난 후, 오펜하이머는 ‘아메리칸 프로메테우스’로 불리며 영웅으로 칭송받았다. 그리스 신화에서 프로메테우스가 제우스로부터 불을 훔쳐 인류에게 주었던 것처럼, 오펜하이머는 원자폭탄 개발에 성공해 미국에 승리를 가져다주었다. 하지만 정작 오펜하이머는 수많은 사람의 목숨을 앗아간 핵무기의 참상을 보고 큰 죄책감을 느꼈다. 그는 해리 트루먼 전 미국 대통령에게 “제 손에 피가 묻어 있는 것 같습니다(I feel I have blood on my hands).”라고 말하기도 했다. <KAIST비전> 기자들은 오펜하이머와의 가상인터뷰를 통해 핵무기가 가진 위험성에 대한 그의 우려와 핵무기를 개발하며 느꼈던 윤리적 고뇌를 보여주고자 한다. 이는 영화 <오펜하이머>나 그의 평전인 『아메리칸 프로메테우스』에도 잘 나타나 있다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/2-4.jpg",
+        caption: "출처 ⓒwikimedia",
       },
       {
         type: "subtitle",
@@ -116,6 +138,11 @@ export const data23wintera: Article[] = [
         text: "트리니티 실험의 성공 순간, 여러 감정이 한꺼번에 들이닥쳤습니다. 처음에는 긴 시간 매진한 연구를 성공으로 이끈 것이 기뻤습니다. 하지만 한편으로 그 파멸적인 힘을 눈으로 확인하고 나니 책임감과 공포, 불안함이 저를 짓눌렀습니다. 이론적으로 아는 것과 직접 보고 느끼는 것에는 큰 차이가 있으니까요. 앞으로의 세상이 예전과는 크게 달라질 것이라는 걸 깨달았습니다. 원자폭탄의 파괴력을 본 과학자들은 이를 실제로 투하하는 것에 크게 반대하기 시작했습니다. 저 또한 원자폭탄의 투하를 반대했지만, 이미 벌어진 일을 되돌릴 수는 없었습니다. 그 이후부터 저는 핵무기의 사용과 수소폭탄 개발에 강력히 반대했습니다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/2-5.jpg",
+        caption: "출처 ⓒwikimedia",
+      },
+      {
         type: "subtitle",
         text: "오펜하이머 이후, 핵무기 확산을 막기 위한 국제사회의 노력",
       },
@@ -131,6 +158,7 @@ export const data23wintera: Article[] = [
         type: "text",
         text: "NPT는 핵의 비확산, 핵무기 군비 축소, 원자력 기술의 평화적 이용의 세 가지 내용이 핵심이다. 먼저 한국처럼 아직 핵무기를 보유하지 않은 국가가 핵무기를 개발하지 못하도록 억제한다. 그리고 가입국들은 핵무기 경쟁을 하지 않고, 핵무장 해제를 위해 협력해야 한다. 마지막으로, 원자력 기술은 원자력발전소 등의 평화적인 목적으로만 이용해야 한다. 현재 인도와 파키스탄, 이스라엘, 남수단을 제외한 대부분의 국가가 NPT 회원국이다. 한국은 1975년에 가입했다.",
       },
+
       {
         type: "subtitle",
         text: "한계와 비판이 있지만, NPT는 핵비확산의 핵심",
@@ -158,6 +186,11 @@ export const data23wintera: Article[] = [
       {
         type: "text",
         text: "KAIST 핵비확산교육연구센터(NEREC)는 핵비확산을 연구하고 실천하는 국내 유일의 대학 기관이다. 2014년 설립된 이후, 핵비확산을 위해 노력할 미래 세대를 양성하고 있다. NEREC의 센터장을 맡고 있는 임만성 KAIST 원자력및양자공학과 교수를 만나 핵비확산과 원자력의 평화적 이용에 대한 이야기를 나눠보았다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/2-6.jpg",
+        caption: "©최건",
       },
       {
         type: "subtitle",
@@ -199,39 +232,6 @@ export const data23wintera: Article[] = [
         type: "text",
         text: "NEREC이 설립된 계기부터 설명하고 싶다. 2012년 서울에서 핵안보 정상회의가 열렸는데, 당시 나는 이 회의의 자문위원을 맡았다. 그리고 이것이 계기가 되어 미국과 원자력 협정을 개정할 때도 자문위원으로 초청을 받았다. 핵농축, 핵 재처리 기술 등 핵무기와 직접적으로 연결될 수 있는 민감한 기술들을 들여오고자 했는데, 미국에서 핵비확산에 대한 국가센터를 짓는 것을 조건으로 내걸었다. 당시에는 한국에 핵비확산이라는 개념이 문화적으로도, 제도적으로도 미숙했기에 올바른 방식으로 핵무기와 원자력 기술 관련 연구가 정착될 수 있도록 하기 위해서였다. 그렇게 KAIST에 NEREC이 설립됐고, 현재는 원자력에 관한 여러 연구를 진행하면서도 원자력이 가진 영향력을 바탕으로 원자력의 가장 안전하고 평화적인 사용법을 찾고 있다.",
       },
-      {
-        type: "image",
-        image: "/images/23-wintera/2-1.jpg",
-        caption:
-          "사진 1. 레슬리 그로브스 대령(왼쪽)과 오펜하이머(오른쪽). ⓒwikimedia",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/2-2.jpg",
-        caption:
-          "사진 2. 1946년 7월 16일, 최초의 원자폭탄 폭발 실험이 성공했다. ⓒwikimedia",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/2-3.jpg",
-        caption:
-          "사진 3, 1945년 8월 9일 일본 나가사키에 떨어진 원자폭탄의 모습. ⓒwikimedia",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/2-4.jpg",
-        caption: "ⓒwikimedia",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/2-5.jpg",
-        caption: "ⓒwikimedia",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/2-6.jpg",
-        caption: "©최건",
-      },
     ],
   },
   {
@@ -244,8 +244,14 @@ export const data23wintera: Article[] = [
         "글 / 윤소예 학생기자 ddon2161@kaist.ac.kr, 김태연 학생기자 tykim05@kaist.ac.kr, 김규리 학생기자 luna0406@kaist.ac.kr\n사진 / 김태연 학생기자",
       caption:
         "액트노바(ACTNOVA)는 인공지능(AI)을 이용한 행동 영상 분석 기술로 영상 분석의 미래를 형상화하는 기업이다. 차별화된 기술력으로 글로벌 플랫폼으로 거듭나고 있는 액트노바를 <KAIST비전> 기자들이 찾아갔다.",
+      image: "/images/23-wintera/3-0.png",
     },
     body: [
+      {
+        type: "image",
+        image: "/images/23-wintera/3-1.jpg",
+        caption: "액트노바 회사의 일상.",
+      },
       {
         type: "subtitle",
         text: "#액트노바의 시작점",
@@ -267,12 +273,23 @@ export const data23wintera: Article[] = [
         text: "액트노바는 디지털 헬스케어, 신약 개발 등의 바이오 분야에 AI 기술 기반의 소프트웨어를 공급하는 기업이다. 김 대표는 발전하는 신약 개발 기술에 발맞춰, 동물 실험 과정도 함께 발전해 나가야 한다고 생각했다. 이에 AI 기술을 기반으로 영상을 분석하는 웹 애플리케이션을 만들었다. 해당 애플리케이션은 쥐와 같은 설치류를 주요 대상으로 하며, 다양한 동물 실험 영상을 AI로 분석한다. 영상에서 동물의 골격을 시간에 따라 인식하고 추적해 데이터를 얻어, 사용자에게 통계와 그래픽 형태로 제공한다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/3-2.png",
+        caption:
+          "액트노바의 기술을 직관적으로 보여주는 웹사이트. @ACTNOVA 웹사이트",
+      },
+      {
         type: "subtitle",
         text: "#액트노바만의 차별점",
       },
       {
         type: "text",
         text: "액트노바는 동물 행동 분석을 위한 하드웨어 ‘아바타(AVATAR)’도 함께 개발해 판매하고 있다. 그러나 빠른 성장을 목표로 하는 스타트업의 특성상 하드웨어를 개발하는 제조업에는 어려움이 따를 수 있다. 이에 액트노바는 컴퓨터나 서버 설치·유지 보수 없이도 사용자에게 소프트웨어를 제공하는 클라우드 기반의 서비스형 소프트웨어(SaaS)를 사용한다. 또 기존 제품들에서 쉽게 찾아볼 수 없던 딥러닝 모듈도 사용해 높은 정확도를 보여주며, 일반 노트북에서도 애플리케이션을 사용할 수 있도록 접근성을 높였다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/3-3.png",
+        caption: "액트노바의 아바타 3D 시뮬레이터 데모. @ACTNOVA Avatar 3D 웹",
       },
       {
         type: "subtitle",
@@ -285,6 +302,10 @@ export const data23wintera: Article[] = [
       {
         type: "subtitle",
         text: "(인터뷰) 김대건 대표에게 듣는 액트노바 이야기",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/3-4.jpg",
       },
       {
         type: "subtitle",
@@ -323,8 +344,18 @@ export const data23wintera: Article[] = [
         text: "김 대표는 액트노바를 개인과 회사의 동시 성장을 목표로 하는 회사라고 소개했다. 회사의 업무가 개인의 성장과 최대한 일치하도록 노력하고, 타인의 지시보다는 본인의 판단하에 업무를 진행하는 빈도를 높여 전문성을 체득하는 기회를 주려고 한다. 액트노바는 적절한 자유와 책임이 조화될 수 있는 환경도 중요시한다. 특히 직원들은 본인의 업무 성향에 따라 출퇴근 및 원격 근무를 자유롭게 선택할 수 있다. 자유로운 환경에서 개인의 능력치를 최대한으로 발휘해, 회사 또한 빠르게 성장할 수 있도록 하기 위해서다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/3-5.jpg",
+        caption: "무제한으로 제공되는 간식이 비치된 공간.",
+      },
+      {
         type: "text",
         text: "또 업무의 효율성을 높이는 것을 중요하게 생각해, 생산성을 저해하는 불필요한 절차도 간소화했다. 대표적인 것이 ‘1인 1법인카드 제공’이다. 식대, 도서, 출장비같이 업무에 필요한 비용은 복잡한 보고 절차 없이 법인카드를 사용할 수 있다. 이 외에도 액트노바에서는 웰컴 키트, 매월 십만 원가량의 체력 증진 지원과 같은 다양한 복지를 제공한다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/3-6.jpg",
+        caption: "김규리, 윤소예 학생기자가 휴식공간에서 이야기를 나누고 있다.",
       },
       {
         type: "subtitle",
@@ -343,47 +374,17 @@ export const data23wintera: Article[] = [
         text: "아직 한국에는 행동 분석 AI를 바탕으로 한 웹 기반 SaaS 제품을 전 세계에 판매하는 회사가 많지 않다. 액트노바는 아직은 작은 회사이지만 유니콘 기업으로 성장할 수있는 강력한 잠재력을 가졌다. 여러분이 만드는 제품이 전 세계의 연구원에게 사용될 글로벌 제품이 될 수 있다는 것을 기억하고 액트노바에 관심을 가져주면 좋겠다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/3-7.jpg",
+        caption: "회사 내부의 전체적인 모습.",
+      },
+      {
         type: "subtitle",
         text: "액트노바 탐방 소감",
       },
       {
         type: "text",
         text: "액트노바 내부를 돌아보면서 보통 회사처럼 딱딱하지 않고 함께 공부하는 듯한 편안한 분위기를 느낄 수 있었다. 벽에는 긴장을 풀고 힘을 실어주는 문구들이 붙어있었고, 2층에는 편리한 휴식 및 운동 공간이 마련되어 있었다. 편안하고 자유로운 기업문화를 갖추고 있다는 설명을 그대로 실현한 것 같은 공간이었다. 인터뷰를 통해 액트노바만의 차별화된 기술력과 글로벌 기업으로 성장할 수 있다는 강력한 자신감을 몸소 느낄 수 있었다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/3-1.jpg",
-        caption: "액트노바 회사의 일상.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/3-2.jpg",
-        caption:
-          "액트노바의 기술을 직관적으로 보여주는 웹사이트. @ACTNOVA 웹사이트",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/3-3.jpg",
-        caption: "액트노바의 아바타 3D 시뮬레이터 데모. @ACTNOVA Avatar 3D 웹",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/3-4.jpg",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/3-5.jpg",
-        caption: "무제한으로 제공되는 간식이 비치된 공간.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/3-6.jpg",
-        caption: "김규리, 윤소예 학생기자가 휴식공간에서 이야기를 나누고 있다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/3-7.jpg",
-        caption: "회사 내부의 전체적인 모습.",
       },
     ],
   },
@@ -420,18 +421,18 @@ export const data23wintera: Article[] = [
         text: "여러 강의 중 <해킹 교실>과 <신비한 칵테일의 세계> 수업을 더 자세히 알아보자. <해킹 교실>은 KAIST 해킹 동아리 ‘GoN’ 부원들이 강사가 되어 이론과 실습을 통해 웹 해킹, 암호학, 포렌식 등 해킹을 가르쳐 준다. 먼저 서버 관리자의 계정 탈취하기, 암호화된 텍스트를 복구해 고객의 비밀번호 찾아내기, 파일에 숨겨진 정보 복구하기 등을 배운다. 그다음 취약점을 공략할 수 있는 구체적인 공격 방안을 수립해 실습한다. 수강생들은 강사의 도움을 받으며 스스로 취약점을 공략하는 방법을 터득하게 된다. 이 수업을 수강하고 있는 새내기과정학부 23학번 전수종 KAISTian은 “해킹을 아예 몰라서 처음에는 이해되지 않는 부분들이 많았지만, 강사 선배들로부터 많은 도움을 받으며 재밌게 듣고 있다”고 말했다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/4-1.jpg",
+        caption:
+          "<해킹 교실>에서 학생들이 해킹 기본 개념을 배우고 있다. ©김민성",
+      },
+      {
         type: "subtitle",
         text: "PART 2. 수업 시간에 바텐더 체험 <신비한 칵테일의 세계>",
       },
       {
         type: "text",
         text: "KAIST 칵테일 동아리 ‘MIXER’가 담당하는 <신비한 칵테일의 세계>는 칵테일이 무엇인지 알고 맛보는 강의다. 조주 도구를 이용한 계량 연습, 조주 방법 및 재료에 관한 이해, 조주 실습 과정도 거친다. 강의 마지막에는 나만의 칵테일을 만드는 실습을 진행한다. 학생들은 다양한 칵테일을 시음하고, 지거와 쉐이커를 이용해 피나 콜라다를 만드는 시간을 갖는다. <신비한 칵테일의 세계>는 70도 술에 불을 붙여보는 등 여러 흥미로운 활동을 하는 덕에 학생들의 만족도가 높은 강의다. 이 수업을 수강하고 있는 새내기과정학부 23학번 임민서 KAISTian은 “칵테일바에서 아르바이트하고 있어 자세히 알고 싶은 마음에 수강했는데, 직접 칵테일을 만드는 과정을 배울 수 있어서 인상 깊었다”며 “칵테일 재료에 대해 배우고, 시음해 본 활동이 제일 기억에 남았다”라고 수강 소감을 밝혔다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/4-1.jpg",
-        caption:
-          "<해킹 교실>에서 학생들이 해킹 기본 개념을 배우고 있다. ©김민성",
       },
       {
         type: "image",
@@ -492,6 +493,12 @@ export const data23wintera: Article[] = [
         text: "1999년에는 역으로 전류가 자석의 방향에 영향을 준다는 것이 밝혀졌다. 이를 ‘스핀전달토크(spin transfer torque)’라고 부른다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/5-1.png",
+        caption:
+          "층간교환결합 현상을 나타낸 그림. 거리가 멀어짐에 따라 두 자석의 방향과 세기가 변화한다. ⓒ김갑진",
+      },
+      {
         type: "subtitle",
         text: "스핀트로닉스, 새로운 정보화 시대의 기대주",
       },
@@ -521,19 +528,18 @@ export const data23wintera: Article[] = [
       },
       {
         type: "image",
-        image: "/images/23-wintera/5-1.jpg",
-        caption:
-          "층간교환결합 현상을 나타낸 그림. 거리가 멀어짐에 따라 두 자석의 방향과 세기가 변화한다. ⓒ김갑진",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/5-2.jpg",
+        image: "/images/23-wintera/5-2.png",
         caption:
           "준강자성체를 활용한 스핀 메모리. 기존의 강자성체 스핀 메모리보다 월등히 빠른 속도를 보인다. ⓒNature Materials",
       },
       {
         type: "subtitle",
         text: "[인터뷰] KAIST 응용 스핀트로닉스 연구실 이경진 교수",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/5-3.jpg",
+        caption: "이경진 교수. ©박태우",
       },
       {
         type: "subtitle",
@@ -583,11 +589,7 @@ export const data23wintera: Article[] = [
         type: "text",
         text: "마지막으로, 인생에는 사이클이 있다. 누구나 어떤 시기에는 뭘 도전해도 잘 되고, 어떤 시기에는 무엇을 해도 잘 풀리지 않는다. 그래서 대학에 진학하면 ‘딴짓’을 많이 했으면 한다. 대학원 갈 정도의 학점만 준비하고, 남은 시간엔 책도 보고, 여행도 다니고, 이성 친구도 만나며 인생을 풍요롭게 만들었으면 좋겠다. 그래야 바닥을 치는 시기가 찾아올 때 이를 버틸 힘이 생긴다. 나보다 잘하는 사람은 항상 어딘가에 있기에, 행복해질 수 있는 자신만의 힘을 길러가기를 바란다.",
       },
-      {
-        type: "image",
-        image: "/images/23-wintera/5-3.jpg",
-        caption: "이경진 교수. ©박태우",
-      },
+
       {
         type: "image",
         image: "/images/23-wintera/5-4.jpg",
@@ -622,6 +624,11 @@ export const data23wintera: Article[] = [
         text: "또 KAIST에서는 입학 후 1년은 학과 없이 여러 활동을 통해 많은 경험을 쌓을 수 있게 한다. 이를 위해 학업에 대한 부담감을 줄일 수 있도록 여러 제도를 시행해왔다. 이전에는 ABCDF 제도와 SU 제도가 성적 평가로 시행됐다. SU 제도는 교수진의 판단하에 S나 U의 성적을 주는 것으로, S를 받으면 학점으로 인정된다. 높은 성적에 매달릴 필요가 없기에 ABCDF 제도보다는 부담이 덜하지만, 교수진에 따라 S와 U를 주는 기준이 명확하지 않다는 문제가 있었다. 또 U를 받으면 성적표에 그대로 표기되며, ABCDF 성적표기 중 낙제인 F와 비슷해, 학생들이 부담감을 느낄 수밖에 없다는 단점도 존재했다. 이에 새내기들의 학업 부담감을 덜 수 있는 새로운 제도의 필요성이 제기됐다. 이에 KAIST가 떠올린 방법이 P/NR 제도였다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/6-1.jpg",
+        caption: "P/NR 제도 설문조사 결과. ©KAIST 교무기획처",
+      },
+      {
         type: "subtitle",
         text: "P/NR 제도 운영 방식 파헤치기",
       },
@@ -632,6 +639,15 @@ export const data23wintera: Article[] = [
       {
         type: "text",
         text: "또 과목마다 교수님들의 판단하에 SU나 ABCDF 성적표기를 결정했던 기존 방식과는 달리, P/NR 제도는 학생들이 직접 적용할 과목을 지정할 수 있다. 적용할 수 있는 과목의 범위에도 제한이 없다. 새내기들은 기초과목 중 부담되는 과목이나 관심 있는 전공과목을 편하게 듣기 위해 원하는 방식으로 이 제도를 이용하고 있다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/6-2.png",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/6-3.png",
+        caption: "P/NR 표기 방식에 관한 카드뉴스. ©KAIST 교학기획팀",
       },
       {
         type: "subtitle",
@@ -650,8 +666,18 @@ export const data23wintera: Article[] = [
         text: "새내기들이 도전적이고 창의적인 인재로 자라나도록 하기 위한 P/NR 제도. 이 과감한 변화가 앞으로 어떤 바람을 불러올지는 두고 봐야 할 일이다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/6-4.jpg",
+        caption: "KIND 설문조사 공지 카드뉴스. ©KAIST 학부 총학생회 SNS",
+      },
+      {
         type: "subtitle",
         text: "[인터뷰] 이현주 KAIST 교무기획처장",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/6-5.jpg",
+        caption: "KAIST 교무부처장 이현주 교수. ©이현주",
       },
       {
         type: "subtitle",
@@ -719,26 +745,6 @@ export const data23wintera: Article[] = [
       },
       {
         type: "image",
-        image: "/images/23-wintera/6-1.jpg",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/6-2.png",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/6-3.png",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/6-4.jpg",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/6-5.jpg",
-      },
-      {
-        type: "image",
         image: "/images/23-wintera/6-6.jpg",
       },
     ],
@@ -754,6 +760,11 @@ export const data23wintera: Article[] = [
         "진짜 관심사를 찾기까지 오랜 시간이 걸리는 사람이 있는가 하면, 일찍이 좋아하는 걸 찾아 푹 빠져 사는 사람도 있다. 좋아하는 일을 해내고, 하고 싶은 일로 미래를 계획하는 KAISTian, 수리과학부 20학번 최정담 학우를 소개한다.",
     },
     body: [
+      {
+        type: "image",
+        image: "/images/23-wintera/7-1.jpg",
+        caption: "최정담 학우. © 주희영",
+      },
       {
         type: "subtitle",
         text: "Q. KAIST에서의 학교생활은 어떤가?",
@@ -787,6 +798,11 @@ export const data23wintera: Article[] = [
         text: "물론 수학의 아름다움을 일반적인 사람들이 이해하기는 쉽지 않다는 데 동의한다. 클래식 음악이 아름답다고 하지만 대중적이지 않은 것과 비슷하다. 사람들에게 생소하다 보니 그 아름다움을 전달하기도 어렵다. 수학의 아름다움을 이해하기 위해서는 무작정 수학 수업을 들어보면서 수학과 친해져야 하는 것 같다. 그 과정에서 분명 수학의 가치와 아름다움을 느낄 수 있을 것이다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/7-2.jpg",
+        caption: "『발칙한 수학책』에 등장하는 캐릭터. ©최정담",
+      },
+      {
         type: "subtitle",
         text: "Q. 운영하는 수학 블로그가 인기를 얻고, 『발칙한 수학책』이라는 책을 집필하기도 했다. 이러한 활동을 하게 된 계기가 무엇인가?",
       },
@@ -799,12 +815,22 @@ export const data23wintera: Article[] = [
         text: "『발칙한 수학책』은 페이스북에서 운영한 ‘유사 수학 탐지기’라는 페이지에서 시작됐다. 개인적으로 운영하던 페이지를 보고 출판사로부터 연락이 왔다. 페이지 글은 게시물로 올리는 단편성 글이었기 때문에, 책을 집필할 때는 글 사이에 흐름을 추가해 유기적인 구조로 엮었다. 이후에도 계속 연락이 와서 지금도 책을 쓰고 있다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/7-3.jpg",
+        caption: "KAISTian 수리과학부 최정담 학우. ©최정담",
+      },
+      {
         type: "subtitle",
         text: "Q. 책을 집필할 때 특별히 중요하게 생각한 점이 있는가?",
       },
       {
         type: "text",
         text: "기존의 수학책들은 비슷비슷하다고 느껴서, 내가 만드는 책은 확실한 차별점이 있기를 바랐다. 어려운 문제를 직접 푸는 즐거움을 독자들에게 알려주고 싶어, 고난도 문제를 수식 없이 푸는 과정도 담았다. 또 차별점을 확실히 하기 위해 위키피디아나 영상 등을 많이 찾아보며 열심히 조사했다. 내가 정한 목표에 대해 의욕을 잃지 않고, 항상 독자들을 생각하며 글을 쓰려고 노력했다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/7-4.jpg",
+        caption: "최정담 학우가 집필한 『발칙한 수학책』 표지. ©최정담",
       },
       {
         type: "subtitle",
@@ -826,26 +852,6 @@ export const data23wintera: Article[] = [
         type: "text",
         text: "마지막으로 ‘제자리로 돌아오는 느낌이 들 때는 제자리로 돌아오는 것이 아니라 나선형으로 올라가고 있는 것’이라는 말을 해주고 싶다. 힘들 때 스스로 자주 되새겼던 말인데, 많은 힘이 되었던 것 같다.",
       },
-      {
-        type: "image",
-        image: "/images/23-wintera/7-1.jpg",
-        caption: "최정담 학우. © 주희영",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/7-2.jpg",
-        caption: "『발칙한 수학책』에 등장하는 캐릭터. ©최정담",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/7-3.jpg",
-        caption: "KAISTian 수리과학부 최정담 학우. ©최정담",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/7-4.jpg",
-        caption: "최정담 학우가 집필한 『발칙한 수학책』 표지. ©최정담",
-      },
     ],
   },
   {
@@ -861,6 +867,11 @@ export const data23wintera: Article[] = [
     },
     body: [
       {
+        type: "image",
+        image: "/images/23-wintera/8-1.jpg",
+        caption: "차유진 동문. ⓒ김예림",
+      },
+      {
         type: "subtitle",
         text: "Q. KAIST 학부 졸업 후 의학전문대학원으로 진학한 이유가 무엇인가?",
       },
@@ -875,6 +886,11 @@ export const data23wintera: Article[] = [
       {
         type: "text",
         text: "의사는 무조건 안정적인 직업이라 생각했는데, 암 환자를 진료하다 보니 삶과 죽음에 대한 고민이 항상 뒤따랐다. 환자의 생사가 나로 인해 갈린다는 생각에 무력해지고 회의감도 들었다. 그래서 의사과학자가 되어 현대의학의 한계를 넓히면, 환자를 직접 진료하는 의사보다 더 많은 사람을 살릴 수 있지 않을까 싶어 이 길을 선택했다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/8-2.jpg",
+        caption: "레지던트 시절.",
       },
       {
         type: "subtitle",
@@ -893,12 +909,22 @@ export const data23wintera: Article[] = [
         text: "주변의 시선이나 남들이 가지 않은 길에 대한 불안함이 있었다. 이러한 장벽은 가슴 한편에 남아있던 KAIST 정신 덕분에 극복할 수 있었다. 남들이 가는 길을 따라가지 않고, 내가 옳다고 생각하는 길로 당당하게 걸어갈 수 있는 그런 용기 말이다. 새로운 도전을 두려워하지 않도록 해준 KAIST 정신 덕분에 내가 하나의 선례가 돼 보자는 마음으로 뚝심 있게 도전할 수 있었다. 그래서 KAIST 학위수여식에서 연설도 할 수 있었던 것 같다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/8-3.jpg",
+        caption: "의사로서 환자를 진료하는 차유진 동문.",
+      },
+      {
         type: "subtitle",
         text: "Q. 의사과학자에게 필요한 역량은 무엇인가?",
       },
       {
         type: "text",
         text: "새로운 문제를 발굴하는 능력이 가장 중요한 것 같다. 의사과학자는 의학과 과학 모두를 공부해야 하기에 긴 시간을 투자해야 하지만, 그만큼 한 분야만 공부한 사람들이 발견하지 못하는 문제를 찾아낼 수 있다. 이 장점을 잘 살리면 좋을 것 같다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/8-4.jpg",
+        caption: "레지던트 시절 학회에서 발표했던 모습.",
       },
       {
         type: "subtitle",
@@ -909,6 +935,11 @@ export const data23wintera: Article[] = [
         text: "무엇보다 기본에 충실해야 한다. 아무리 창의적인 사람이라도, 기본 지식과 경험이 없으면 새로운 문제를 발굴하기 어렵다. 다양한 분야에서 활동하는 사람들과 대화를 나누며 사고의 폭을 넓히고, 내 생각이 틀릴 수도 있다고 인정하는 유연한 마음을 가지는 것도 필요하다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/8-5.jpg",
+        caption: "차유진 동문은 뇌 기반 인공지능을 연구하고 있다.",
+      },
+      {
         type: "subtitle",
         text: "Q. 현재 연구실에서 어떤 연구를 하고 있는가?",
       },
@@ -917,42 +948,17 @@ export const data23wintera: Article[] = [
         text: "뇌 기반 인공지능(AI) 기초 연구를 하고 있다. 사람의 지능과 AI 지능을 융합해 양방향의 지능을 확장하는 것이 연구의 목표다. 이렇게 확장한 지능을 의학 같은 전문지식에 적용해 궁극적으로 특정 질환을 치료하거나 인류에게 도움을 주고 싶다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/8-6.jpg",
+        caption: "차유진 동문의 연구팀.",
+      },
+      {
         type: "subtitle",
         text: "Q. 진로를 고민하는 미래의 KAISTian에게 마지막으로 전하고 싶은 얘기가 있다면?",
       },
       {
         type: "text",
         text: "내가 의사과학자가 되겠다고 마음먹었을 때는 누구도 의사과학자에 대해 관심이 없었다. 그런데 지금은 의사과학자가 많은 주목과 지원을 받는 직업이 됐다. 요즘 많은 사람들이 자기가 하고 싶은 일을 꿈꾸는 게 아니라 휩쓸려 가는 것 같다. 내가 하고 싶은 일을 남들이 알아주길 바라는 건 아니지만, 꾸준히 노력하면 세상이 알아주는 시기가 오는 것 같다. 독자 여러분도 자기 소신대로, 자신감을 갖고 꿈을 향해 노력하면 좋겠다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/8-1.jpg",
-        caption: "차유진 동문. ⓒ김예림",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/8-2.jpg",
-        caption: "레지던트 시절.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/8-3.jpg",
-        caption: "의사로서 환자를 진료하는 차유진 동문.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/8-4.jpg",
-        caption: "레지던트 시절 학회에서 발표했던 모습.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/8-5.jpg",
-        caption: "차유진 동문은 뇌 기반 인공지능을 연구하고 있다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/8-6.jpg",
-        caption: "차유진 동문의 연구팀.",
       },
     ],
   },
@@ -963,6 +969,7 @@ export const data23wintera: Article[] = [
     header: {
       title: "KAIST의 환경은 내가 지킨다! 환경 자치단체 ‘G-ink’",
       author: "글 / 여남규 학생기자 prism011312@kaist.ac.kr, 사진 / G-ink",
+      image: "/images/23-wintera/9-0.jpg",
       caption:
         "KAIST 학생이라면 매점 환경 캠페인, 텀블러 프로젝트 등에 한 번쯤 참여해 본 적이 있을 것이다. 축제 기간 캠페인 팻말부터 화장실 텀블러 세척기까지, 이 모든 활동을 ‘G-ink’가 주최하고 있다. G-ink 동아리방에 들어가자, 수많은 상장이 환하게 반겨주었다. 그만큼 멋진 활약을 해낸 동아리를 <KAIST비전>이 직접 취재해 보았다.",
     },
@@ -972,8 +979,18 @@ export const data23wintera: Article[] = [
         text: "KAIST 총학생회 산하 특별 자치기구이자 환경 자치단체인 G-ink는 ‘Green in KAIST’의 약자로, ‘카이스트를 초록빛으로’라는 모토를 갖고 지속 가능한 친환경 캠퍼스를 만들고자 노력하고 있다. G-ink가 어떤 부서로 이뤄져 있고, 다양한 환경 문제에 대해 어떻게 논의하고 해결하는지 알아보자.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/9-2.png",
+        caption: "학생문화팀이 진행한 환경영화 상영회 포스터.",
+      },
+      {
         type: "text",
         text: "1. 학생문화팀은 G-ink 내 가장 규모가 큰 팀으로, 학생들이 환경에 관심을 갖고 친환경적인 캠퍼스를 만드는 데 즐겁게 참여할 수 있도록 돕는다. 가을 축제 때 ‘일회용 컵으로 화분 만들기’나 ‘환경 미니게임’ 등 환경을 주제로 한 다양한 축제 부스를 진행한다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/9-3.png",
+        caption: "학생문화팀이 진행한 플라스틱 병뚜껑 업사이클링 프로젝트.",
       },
       {
         type: "text",
@@ -984,12 +1001,27 @@ export const data23wintera: Article[] = [
         text: "3. 생태시설팀은 KAISTian에게 가장 친숙한 텀블러 프로젝트를 기획하고 관리하는 팀이다. 친환경 텀블러 세척제를 도서관, 교양분관 등 학생들이 많이 가는 장소에 비치해 교내 시설을 친환경적이고 깨끗하게 유지하는 데 도움을 준다. 이 외에도 스쿨팜(작물 기르기), 백로 탐구 등 교내 시설과 환경에도 귀 기울이고 있다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/9-1.jpeg",
+        caption: "생태시설팀이 2023년 봄 진행한 텃밭 가꾸기 프로젝트.",
+      },
+      {
         type: "text",
         text: "4. 소통교류팀은 외부에 G-ink를 알리는 업무를 맡고 있다. 보통 타 대학 환경 동아리와 사업 교류를 한다. 공동 사업을 기획하여 각 캠퍼스에서 진행하기도 한다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/9-4.jpeg",
+        caption: "타 대학과 공동으로 전시물을 제작하고 전시했다.",
+      },
+      {
         type: "text",
         text: "5. 탐구정보팀에서는 학술 탐구를 통해 부원, 학생들에게 정보를 공유한다. 연사 초청 강연을 열어 환경 지식을 KAISTian에게 소개하거나, 환경 기사를 작성한다. G-ink 정기모임 때 문제를 맞힌 부원부터 퇴근하는 ‘퇴근 골든벨’의 문제를 준비하는 역할도 한다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/9-5.jpg",
+        caption: "Gink가 주최하는 에코페스티벌 현장.",
       },
       {
         type: "subtitle",
@@ -1018,31 +1050,6 @@ export const data23wintera: Article[] = [
       {
         type: "text",
         text: "환경 문제를 직접 다루고, 이에 대한 해결책을 마련하는 활동을 하므로 환경에 관심과 아이디어가 많은 친구들이 들어오면 좋겠다. 문제를 다양한 방법으로 해결할 수 있는 학생도 선호한다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/9-1.jpeg",
-        caption: "생태시설팀이 2023년 봄 진행한 텃밭 가꾸기 프로젝트.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/9-2.png",
-        caption: "학생문화팀이 진행한 환경영화 상영회 포스터.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/9-3.png",
-        caption: "학생문화팀이 진행한 플라스틱 병뚜껑 업사이클링 프로젝트.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/9-4.jpeg",
-        caption: "타 대학과 공동으로 전시물을 제작하고 전시했다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/9-5.jpg",
-        caption: "Gink가 주최하는 에코페스티벌 현장.",
       },
       {
         type: "image",
@@ -1109,6 +1116,7 @@ export const data23wintera: Article[] = [
       {
         type: "image",
         image: "/images/23-wintera/10-11.jpg",
+        width: 128,
       },
     ],
   },
@@ -1124,6 +1132,11 @@ export const data23wintera: Article[] = [
         "글 / 이동민 학생기자 dmdmhs20@kaist.ac.kr, 사진 / 박태우 학생기자 ptw151125@kaist.ac.kr",
     },
     body: [
+      {
+        type: "image",
+        image: "/images/23-wintera/11-1.jpg",
+        caption: "진로 멘토링을 진행하고 있는 이동민 대사.",
+      },
       {
         type: "subtitle",
         text: "Q1. 일반고등학교에서 KAIST에 진학하셨는데 어려운 점은 없었나요?",
@@ -1166,11 +1179,6 @@ export const data23wintera: Article[] = [
       },
       {
         type: "image",
-        image: "/images/23-wintera/11-1.jpg",
-        caption: "진로 멘토링을 진행하고 있는 이동민 대사.",
-      },
-      {
-        type: "image",
         image: "/images/23-wintera/11-2.jpg",
         caption: "‘카이누리가 간다’에 참여한 학생들과 박태우, 이동민 대사.",
       },
@@ -1184,6 +1192,8 @@ export const data23wintera: Article[] = [
       title: "‘꿀잼’ 도시의 중심지,\n대전컨벤션센터",
       author:
         "글·사진 / 유지현 학생기자 Yoojihyun6933@kaist.ac.kr, 박재민 학생기자 samslego@kaist.ac.kr",
+      image: "/images/23-wintera/12-1.jpg",
+      image_caption: "대전컨벤션센터(DCC) 전경. ©wikimedia",
       caption:
         "대전컨벤션센터(DCC)는 KAIST에서 자전거를 타고 15분이면 갈 정도로 아주 가까워, 많은 KAIST 학생들이 다양한 목적으로 찾는다. ‘대전사이언스페스티벌’, ‘팬텀싱어4 전국투어’, ‘건축인테리어 박람회’ 등 열리는 행사의 범주도 다양하다. 그중에서 ‘2023 리그오브레전드 챔피언스 코리아(LCK) SUMMER’ 결승전, ‘대전국제와인EXPO’의 뜨거웠던 현장을 직접 취재해 보았다.",
     },
@@ -1197,12 +1207,22 @@ export const data23wintera: Article[] = [
         text: "DCC는 과학도시 대전의 심장부인 대덕연구단지에 자리 잡은 대전 최대 규모의 컨벤션 센터다. 1993년 대전 엑스포가 열렸던 엑스포과학공원 부지에 2008년 개관하였고, 작년에는 제2전시장도 개관했다. 메타버스로 만나는 디지털 트윈 전시장 또한 구현되어 있어, 온라인으로도 전시를 즐길 수도 있다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/12-2.jpg",
+        caption: "2023 LCK SUMMER FINALS.",
+      },
+      {
         type: "subtitle",
         text: "DCC라서 가능한 규모의 축제",
       },
       {
         type: "text",
         text: "2023년 8월 20일, LCK Summer 결승전이 대전에서 열렸다. 제1전시장에서는 경기가 진행됐고, 제2전시장에서는 ‘FAN FESTA’가 열렸다. FAN FESTA는 e스포츠 팬들을 위한 행사로, 굿즈샵 및 e-sports 체험, 스폰서 부스 등이 준비되어 있어 경기 전후로 지루할 틈이 없었다. 거리를 걷다 보면 리그오브레전드(LOL)의 캐릭터를 코스프레한 사람들도 간간이 눈에 띄었다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/12-3.jpg",
+        caption: "Fan Festa 전경.",
       },
       {
         type: "subtitle",
@@ -1213,12 +1233,27 @@ export const data23wintera: Article[] = [
         text: "e스포츠에 관심 있는 독자라면, 선수 유니폼에 많은 기업의 로고가 새겨진 것을 보았을 것이다. 기업들은 이렇게 팀을 후원해주면서 자사를 홍보할 기회를 얻는데, FAN FESTA에도 각 기업을 알리는 스폰서 부스들이 많았다. 그중 몇 개를 기자들이 직접 체험해 보았다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/12-4.jpg",
+        caption: "Fan Festa 내부 이벤트 부스.",
+      },
+      {
         type: "text",
         text: "첫 번째는 우리은행 부스였다. 우리은행은 LCK의 타이틀 스폰서까지 맺을 정도로 e스포츠에 관심이 많은 회사다. ‘마법공학 상자’를 경품으로 받을 수 있고, 디지털 미디어로 오감을 자극하는 이머시브 아트(Immersive Art) 기술을 이용해 게임 세계에 직접 들어온 것처럼 꾸며놓은 전시장이 인상적이었다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/12-5.jpg",
+        caption: "팬들의 응원 한 마디를 적는 부스.",
+      },
+      {
         type: "text",
         text: "스포츠 경기에 주전부리가 빠질 수 없다. 이날 결승전에 올라간 팀 중 하나인 ‘Gen G E-sports’의 후원사 몬스터 에너지와 오비맥주의 카스 부스도 있었다. 카스 부스의 경우, 판매뿐만 아니라 순발력 게임, 천장에 달린 카메라로 인증샷을 찍는 ‘천장네컷’ 등 즐길 거리도 있었다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/12-6.jpg",
+        caption: "우리은행 부스 내 이머시브 아트 전시장.",
       },
       {
         type: "subtitle",
@@ -1229,8 +1264,23 @@ export const data23wintera: Article[] = [
         text: "FAN FESTA에는 LOL뿐만 아니라 발로란트, TFT, 레전드 오브 룬테라 등을 즐길 수 있는 게임 부스도 마련돼 있었다. 대전의 관광 명소와 e스포츠를 소개하는 부스까지 마련되어 있어, 게임을 좋아하는 관객에게는 대전을, 지역민에게는 e스포츠 문화를 소개하는 교류의 장으로 거듭났다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/12-7.jpg",
+        caption: "우리은행 부스 경품 추첨.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/12-8.jpg",
+        caption: "몬스터 드링크 부스.",
+      },
+      {
         type: "text",
         text: "대전은 대한민국에서 첫 와인이 만들어진 곳이다. 이러한 역사를 바탕으로 DCC에서는 매년 대전국제와인EXPO가 열리는데, 세계 16개국에서 10만 명 이상의 관광객이 전시에 몰려든다. 1만여 종의 와인을 시음할 수 있는 무료 시음 존(Zone), ‘가을밤의 와인영화제’ 등 대전만의 이색적인 놀거리로 가득한 DCC를 찾아보았다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/12-9.jpg",
+        caption: "엑스포 다리 위의 와인 라운지 및 야경.",
       },
       {
         type: "subtitle",
@@ -1245,12 +1295,27 @@ export const data23wintera: Article[] = [
         text: "DCC 제2전시장에 자리한 와인&주류 박람회에서는 총 16개국 200개 사의 260가지 부스가 마련됐다. 세계 와인뿐만 아니라 우리나라 전통주를 판매하는 부스도 있었는데, 쑥으로 만든 탁주인 ‘쑥크레’, 우리술 품평회에서 대통령상을 받은 ‘세종대왕어주’ 등 한국의 이색적인 주류들이 외국인 방문객들에게 인기를 끌었다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/12-11.jpg",
+        caption: "전통주 ’쑥크레‘와 ‘세종대왕어주’.",
+      },
+      {
         type: "text",
         text: "아시아 와인트로피 시음 존은 국제 와인 품평회인 ‘아시아 와인트로피’에 출품된 와인 3500 여종을 시음할 수 있는 공간이다. 11시부터 18시 30분까지 20분 간격으로 진행되었으며, 원하는 와인을 마음껏 시음해 볼 수 있다. 와인 입문자들을 위해 시음 방법을 자세히 알려주는 친절함은 덤이다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/12-10.jpg",
+        caption: "아시아 와인트로피 시음존.",
+      },
+      {
         type: "text",
         text: "[관람 팁]\n1. 대전시민이라면 5천 원 할인이 적용되니 신분증 등을 꼭 챙겨가자!\n2. 부스 내에서 시음하려면 개인 와인잔이 필요하다. 행사장 입구에서도 와인잔을 팔고 있으니, 현장에서 구매하는 것도 좋은 방법.\n3. 시음 시 잔을 헹구기 위해 생수 한 병을 들고 가면 좋다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/12-12.jpg",
+        caption: "엑스포 다리 위 세계 와인 및 음식 판매 부스.",
       },
       {
         type: "subtitle",
@@ -1265,8 +1330,18 @@ export const data23wintera: Article[] = [
         text: "풍족한 먹거리도 즐길 수 있다. DCC 제1전시장 G 구역에서는 수비드 스테이크, 육회, 연어 초밥과 같이 와인과 곁들여 먹을 수 있는 음식들을 판매했다.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/12-13.jpg",
+        caption: "푸드 부스 내부 및 음식.",
+      },
+      {
         type: "text",
         text: "야외에서도 와인 문화행사의 열기는 끊이지 않았다. 한빛탑 광장과 엑스포 다리 위에서는 각각 신대륙, 구대륙의 6개국 국가대표 음식을 판매해 관광객의 구미를 자극했다. 와인 라운지도 설치돼 있어, 다리 위 고즈넉한 분위기에서 대전의 야경을 바라보며 와인을 즐길 수 있었다.",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/12-14.jpg",
+        caption: "가을밤의 와인 영화제.",
       },
       {
         type: "subtitle",
@@ -1278,77 +1353,8 @@ export const data23wintera: Article[] = [
       },
       {
         type: "image",
-        image: "/images/23-wintera/12-1.jpg",
-        caption: "대전컨벤션센터(DCC) 전경. ©wikimedia",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-2.jpg",
-        caption: "2023 LCK SUMMER FINALS.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-3.jpg",
-        caption: "Fan Festa 전경.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-4.jpg",
-        caption: "Fan Festa 내부 이벤트 부스.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-5.jpg",
-        caption: "팬들의 응원 한 마디를 적는 부스.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-6.jpg",
-        caption: "우리은행 부스 내 이머시브 아트 전시장.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-7.jpg",
-        caption: "우리은행 부스 경품 추첨.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-8.jpg",
-        caption: "몬스터 드링크 부스.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-9.jpg",
-        caption: "1. 엑스포 다리 위의 와인 라운지 및 야경.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-10.jpg",
-        caption: "아시아 와인트로피 시음존.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-11.jpg",
-        caption: "전통주 ’쑥크레‘와 ‘세종대왕어주’.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-12.jpg",
-        caption: "엑스포 다리 위 세계 와인 및 음식 판매 부스.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-13.jpg",
-        caption: "푸드 부스 내부 및 음식.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/12-14.jpg",
-        caption: "가을밤의 와인 영화제.",
-      },
-      {
-        type: "image",
         image: "/images/23-wintera/12-15.png",
+        width: 128,
       },
     ],
   },
@@ -1453,6 +1459,8 @@ export const data23wintera: Article[] = [
     category: "ON-NURI",
     header: {
       title: "2023 여름 창의적 글로벌 리더 캠프",
+      caption: "카이누리 이모저모 알아가기",
+      image: "/images/23-wintera/14-1.jpg",
     },
     body: [
       {
@@ -1460,12 +1468,29 @@ export const data23wintera: Article[] = [
         text: "<KAIST비전> 독자 여러분, 다들 즐거운 2학기 보내고 있나요?\n어느덧 쌀쌀해진 날씨와 함께 KAIST에도 겨울이 성큼 다가왔는데요.\n카이누리 대사들도 예쁘게 단풍 옷을 입은 캠퍼스에서 학교생활을 즐기고 있답니다!",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/14-2.jpg",
+      },
+      {
         type: "text",
         text: "이번 가을·겨울호에서는 지난 8월에 열렸던\n‘2023 여름 창의적 글로벌 리더 캠프’를 소개해드리고자 합니다.\n창의적 글로벌 리더 캠프, 줄여서 ‘창글리’는 KAIST에 강한 진학 의지를 가진\n고등학생들을 대상으로 이루어지는 캠프입니다.\n카이누리는 직접 모든 프로그램을 기획하고 만드는 기획조교,\n캠프에서 학생들을 인솔하는 학생조교를 모두 담당하고 있답니다!\n캠프 준비를 위해 몇 주 전부터 모여 열심히 캠프 준비를 하는\n대사들의 얼굴에는 기대감 넘치는 표정들이 가득했어요.",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/14-3.jpg",
+      },
+      {
         type: "text",
         text: "이번 여름에는 일반고 친구들을 대상으로 창글리를 진행했는데요.\n언제나 즐거움 가득한 캠프인 창글리답게 학생들은 더위를 잊을 만큼 즐거운 시간을 보냈답니다.\n과연 창글리에서는 어떤 활동을 진행했을까요?\n궁금하시다면 위에 있는 QR코드를 찍어\n카이누리 유튜브에서 확인해보세요!",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/14-4.jpg",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/14-5.png",
+        width: 128,
       },
     ],
   },
@@ -1474,9 +1499,21 @@ export const data23wintera: Article[] = [
     index: "15",
     category: "KAIST-MOOCs",
     header: {
-      title: "준비중",
+      title: "KAIST-MOOCs",
     },
-    body: [],
+    body: [
+      {
+        type: "image",
+        image: "/images/23-wintera/15-1.png",
+        full_width: true,
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/15-2.png",
+        width: 512,
+        full_width: true,
+      },
+    ],
   },
   {
     volume: "23-wintera",
@@ -1489,6 +1526,12 @@ export const data23wintera: Article[] = [
       {
         type: "subtitle",
         text: "자를 필요 없이 과일의 당도를 재는 휴대용 분광기 개발",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/16-1.jpg",
+        caption:
+          "연구팀이 개발한 휴대용 분광기(좌)와 이를 이용해 과일 표면의 반사 스펙트럼을 측정하고 있는 모습(우).",
       },
       {
         type: "text",
@@ -1519,6 +1562,12 @@ export const data23wintera: Article[] = [
         text: "저용량 고효율 백신 실마리, 원형 RNA에서 찾다",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/16-2.jpg",
+        caption:
+          "원형 RNA와 선형 RNA의 단백질 합성 과정. 원형 RNA와 달리 선형 mRNA는 엑손 접합 복합체가 안정적으로 결합하지 못해 단백질 합성이 비효율적으로 일어난다.",
+      },
+      {
         type: "text",
         text: "김윤기 KAIST 생명과학과 교수팀이 차세대 백신에 활용될 수 있는 진핵세포 내 원형 RNA의 단백질 합성 메커니즘을 규명했다.",
       },
@@ -1541,6 +1590,11 @@ export const data23wintera: Article[] = [
       {
         type: "subtitle",
         text: "이차전지 성능과 수명 늘려주는 효율 만점 전해액",
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/16-3.jpg",
+        caption: "전기차에 사용되는 리튬 이온 배터리. ⓒshutterstock",
       },
       {
         type: "text",
@@ -1567,6 +1621,11 @@ export const data23wintera: Article[] = [
         text: "인간의 뇌와 유사한 3차원 뉴로모픽 반도체 개발",
       },
       {
+        type: "image",
+        image: "/images/23-wintera/16-4.jpg",
+        caption: "연구팀이 개발한 3차원 집적 뉴로모픽 반도체의 구조.",
+      },
+      {
         type: "text",
         text: "최양규 KAIST 전기및전자공학부 교수, 명현 전기및전자공학부 교수, 이건재 신소재공학과 교수팀이 인간의 뇌를 모방한 3차원 집적 뉴로모픽 반도체를 개발했다.",
       },
@@ -1577,28 +1636,6 @@ export const data23wintera: Article[] = [
       {
         type: "text",
         text: "연구팀은 단일 박막 트랜지스터 기반 시냅스 소자를 동일 기반 뉴런 소자 위에 3차원 방식으로 수직 집적해 높은 집적도와 전력 효율을 가진 반도체를 개발했다. 소자를 손상 없이 제작하기 위한 엑시머 레이저 어닐링 기법과 소자 내부의 줄열을 이용한 자체 어닐링 기법을 적용해 내구성도 높였다. 덕분에 연구팀의 반도체는 이벤트 카메라를 기반으로 제작된 손동작 기반의 수화 패턴을 높은 성공률로 인식했다. 연구팀은 이번 연구가 뉴로모픽 하드웨어의 상용화를 한 단계 앞당길 수 있을 것으로 기대했다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/16-1.jpg",
-        caption:
-          "연구팀이 개발한 휴대용 분광기(좌)와 이를 이용해 과일 표면의 반사 스펙트럼을 측정하고 있는 모습(우).",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/16-2.jpg",
-        caption:
-          "원형 RNA와 선형 RNA의 단백질 합성 과정. 원형 RNA와 달리 선형 mRNA는 엑손 접합 복합체가 안정적으로 결합하지 못해 단백질 합성이 비효율적으로 일어난다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/16-3.jpg",
-        caption: "전기차에 사용되는 리튬 이온 배터리. ⓒshutterstock",
-      },
-      {
-        type: "image",
-        image: "/images/23-wintera/16-4.jpg",
-        caption: "연구팀이 개발한 3차원 집적 뉴로모픽 반도체의 구조.",
       },
     ],
   },
@@ -1780,9 +1817,20 @@ export const data23wintera: Article[] = [
     index: "19",
     category: "입시정보",
     header: {
-      title: "준비중",
+      title: "2024학년도 KAIST 수능우수자전형(정시) 안내",
     },
-    body: [],
+    body: [
+      {
+        type: "image",
+        image: "/images/23-wintera/19-1.png",
+        full_width: true,
+      },
+      {
+        type: "image",
+        image: "/images/23-wintera/19-2.png",
+        full_width: true,
+      },
+    ],
   },
   {
     volume: "23-wintera",

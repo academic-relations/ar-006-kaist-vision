@@ -37,7 +37,7 @@ export default async function Home() {
           />
         </div>
       </div>
-      <p className="text-2xl font-semibold mt-16 mb-9 ms-6 text-left">
+      <p className="text-2xl font-semibold mt-16 mb-9 text-left">
         2023년 가을겨울호
       </p>
       <div className="flex flex-wrap justify-center gap-6">

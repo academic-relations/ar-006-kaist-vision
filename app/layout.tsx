@@ -11,7 +11,7 @@ import {
   NavbarItem,
 } from "@nextui-org/react";
 import { ThemeSwitch } from "../components/theme-switch";
-import styles from "./Layout.module.css"; // CSS 모듈 가져오기
+import styles from "./Layout.module.css";
 
 export const metadata: Metadata = {
   title: "KAIST Vision",
