@@ -1,5 +1,12 @@
 import { articleDump } from "../../../utils";
-import { KArticle, KHeader, KImage, KText, Subtitle } from "../../components";
+import {
+  KArticle,
+  KHeader,
+  KImage,
+  KReview,
+  KText,
+  Subtitle,
+} from "../../components";
 
 export default function ArticlePage({
   params,
@@ -34,6 +41,15 @@ export default function ArticlePage({
             );
           case "subtitle":
             return <Subtitle key={index}>{content.text as string}</Subtitle>;
+          case "review":
+            return (
+              <KReview
+                key={index}
+                name={content.name}
+                image={content.image}
+                text={content.text}
+              />
+            );
           default:
             return null;
         }

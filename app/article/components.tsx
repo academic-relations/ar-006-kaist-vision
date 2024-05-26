@@ -41,19 +41,37 @@ export const Subtitle = ({ children }: SubtitleProps) => (
   <h2 className={styles.subtitle}>{children}</h2>
 );
 
-type IProps = {
+type KImageProps = {
   src: string;
   caption?: string;
   width?: number;
 };
 
-export const KImage = ({ src, caption, width }: IProps) => (
+export const KImage = ({ src, caption, width }: KImageProps) => (
   <div
     className={styles.imageContainer}
     style={{ width: width ? `${width}px` : "auto" }}
   >
     <Image src={src} alt={caption ?? ""} className={styles.image} />
     {caption && <p className={styles.imageCaption}>{caption}</p>}
+  </div>
+);
+
+type KReviewProps = {
+  name: string;
+  image: string;
+  text: string;
+};
+
+export const KReview = ({ name, image, text }: KReviewProps) => (
+  <div className="flex items-center p-4 my-6 bg-blue-50 rounded-lg shadow-md">
+    <div className="flex-shrink-0">
+      <Image className="w-24 h-24 rounded-full" src={image} alt={name} />
+    </div>
+    <div className="ml-4">
+      <div className="text-xl font-medium text-gray-900">{name}</div>
+      <p className="mt-2 text-gray-600">{text}</p>
+    </div>
   </div>
 );
 
