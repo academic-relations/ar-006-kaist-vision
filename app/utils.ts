@@ -16,6 +16,7 @@ export type Article = {
     author?: string;
     image?: string;
     caption?: string;
+    image_caption?: string;
   };
   body: (ArticleSubtitle | ArticleText | ArticleImage | ArticleReview)[];
 };

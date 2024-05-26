@@ -23,6 +23,7 @@ export default function ArticlePage({
           author={article?.header.author ?? ""}
           image={article?.header.image}
           caption={article?.header.caption}
+          image_caption={article?.header.image_caption}
         />
       }
     >

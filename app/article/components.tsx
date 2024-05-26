@@ -8,6 +8,7 @@ type KHeaderProps = {
   author: string;
   image?: string;
   caption?: string;
+  image_caption?: string;
 };
 
 export const KHeader = (props: KHeaderProps) => (
@@ -20,6 +21,11 @@ export const KHeader = (props: KHeaderProps) => (
         className={styles.headerImage}
         alt="Header Image"
       />
+    )}
+    {props.image_caption && (
+      <figcaption className={styles.imageCaption}>
+        {props.image_caption}
+      </figcaption>
     )}
     {props.caption && <p className={styles.caption}>{props.caption}</p>}
   </div>
