@@ -32,13 +32,10 @@ export const data23wintera: Article[] = [
         text: "그리고 그 속에 <KAIST비전>의 작은 이야기들이\n한 가닥의 즐거움으로 남아있길 소망해 봅니다.",
       },
       {
-        type: "subtitle",
-        text: "제18대 <KAIST비전> 편집장 박서은",
-      },
-      {
         type: "image",
         image: "/images/23-wintera/1-1.jpg",
-        width: 200,
+        width: 240,
+        caption: "제18대 <KAIST비전> 편집장 박서은",
       },
     ],
   },

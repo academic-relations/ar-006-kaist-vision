@@ -8,12 +8,9 @@ export const data23summer: Article[] = [
     header: {
       title: "편집장 인사말",
       author: "제17대 〈KAIST비전〉 편집장 서성재",
+      image: "/images/23-summer/1-0.jpg",
     },
     body: [
-      {
-        type: "image",
-        image: "/images/23-summer/1-0.jpg",
-      },
       {
         type: "text",
         text: "2년 전, 카이누리 정식대사가 되고 작성한 <KAIST비전>의 첫 기사를 읽어보았습니다. 지금 보니 서투름투성이인 듯합니다. 체감하지 못했는데, 그동안 저도 성장했나 봅니다.",
@@ -37,6 +34,8 @@ export const data23summer: Article[] = [
       {
         type: "image",
         image: "/images/23-summer/1-1.jpg",
+        width: 240,
+        caption: "제17대 〈KAIST비전〉 편집장 서성재",
       },
     ],
   },
@@ -50,6 +49,7 @@ export const data23summer: Article[] = [
         "글 / 윤소예 학생기자 ddon2161@kaist.ac.kr, 박태우 학생기자 ptw151125@kaist.ac.kr, 박서은 학생기자 separk0842@kaist.ac.kr",
       caption:
         "어딘가 어두운 기운으로 가득 차 보이는 ‘마약’은 때로는 ‘신의 선물’로, 또는 ‘악마의 선물’로 불리며 인류와 불편한 동거를 이어왔다. 눈부신 과학기술의 발전과 성숙한 시민의식을 이룩한 현대사회에서도, 마약은 덩치를 키워가며 사회 곳곳에서 사건, 사고를 일으키고 있다. 하지만 동시에 마약은 치료나 진통의 용도로서 인류에게 필요한 도구이기에, 그 사용을 마냥 금지하기도 어렵다. 마약은 어떻게 인류 사회와 함께 발전해 왔고, 왜 수많은 사건의 원흉이 되었을까.",
+      image: "/images/23-summer/2-0.png",
     },
     body: [
       {
@@ -162,11 +162,7 @@ export const data23summer: Article[] = [
       },
       {
         type: "subtitle",
-        text: "뇌과학자의 시선으로 마약을 이야기하다,",
-      },
-      {
-        type: "subtitle",
-        text: "KAIST 뇌인지과학과 김대수 교수",
+        text: "뇌과학자의 시선으로 마약을 이야기하다,\nKAIST 뇌인지과학과 김대수 교수",
       },
       {
         type: "image",
@@ -230,6 +226,7 @@ export const data23summer: Article[] = [
       title: "SKT의 AI는 어디에나 있다, SK 텔레콤",
       author:
         "글 / 서성재 학생기자 sj.seo@kaist.ac.kr, 박성빈 학생기자 parksb2002@kaist.ac.kr, 유지현 학생기자 yoojihyun6933@kaist.ac.kr · 사진/ 유지현 학생기자",
+      image: "/images/23-summer/3-0.png",
       caption:
         "‘생각대로 T~’ 전 국민을 매료시켰던 캐치프레이즈의 주인공, SK텔레콤(SKT)의 분위기가 심상치 않다. 통신 사업에만 머무르지 않고, 이제는 인공지능(AI) 개발의 새로운 강자로 떠오르고 있다는 얘기가 들린다. 과연 소문이 사실일까? 대한민국 1등 이동통신기업에서 AI 회사로 변모 중인 SK텔레콤을 박성빈, 서성재, 유지현 학생기자가 찾아갔다.",
     },
@@ -403,15 +400,12 @@ export const data23summer: Article[] = [
     header: {
       title: "혁신과 창의성을 경험하라, 지능 로봇 설계 및 프로그래밍",
       author: "글 / 최원혁 학생기자 dnjsgur12271029@kaist.ac.kr",
+      image: "/images/23-summer/4-0.jpg",
+      image_caption: "ⓒAlesiaKan/shutterstock",
       caption:
         "KAIST 전산학부의 전공과목 ‘지능 로봇 설계 및 프로그래밍’은 기계학습의 기초 개념을 배우고, 로봇 설계 및 프로그래밍에 필요한 기술을 습득할 수 있는 수업이다. 학생들은 팀 프로젝트를 통해 로봇 제어와 인공지능 프로그래밍을 익히고, 기계학습 알고리즘과 로봇의 자율적인 동작을 구현한다. 인공지능 로봇에 관심 있는 예비 KAISTian이 있다면 이 수업에 주목해보자.",
     },
     body: [
-      {
-        type: "image",
-        image: "/images/23-summer/4-0.jpg",
-        caption: "ⓒAlesiaKan/shutterstock",
-      },
       {
         type: "subtitle",
         text: "지루한 이론 수업은 이제 그만!",
@@ -541,11 +535,7 @@ export const data23summer: Article[] = [
       },
       {
         type: "subtitle",
-        text: "INTERVIEW",
-      },
-      {
-        type: "subtitle",
-        text: "KAIST 신경유전체의학연구실 이정호 교수",
+        text: "INTERVIEW: KAIST 신경유전체의학연구실 이정호 교수",
       },
       {
         type: "image",
@@ -617,17 +607,14 @@ export const data23summer: Article[] = [
     category: "돋보기",
     header: {
       title: "KAIST 마스코트, 넙죽이의 인생 몰아보기",
+      image: "/images/23-summer/6-1.png",
+      image_caption: "KAIST 공식 마스코트 넙죽이. ⓒKAIST",
       author:
         "글 / 박수민 학생기자 alicesoomin@kaist.ac.kr, 한석원 학생기자 dulwich10@kaist.ac.kr · 사진 / 박수민 학생기자",
       caption:
         "최근 SNS에서 이과 감성이 듬뿍 담긴 캐릭터라며 학교 밖에서까지 인기 폭발인 마스코트가 있다. 바로 KAIST의 공식 캐릭터 ‘넙죽이’다. 하지만 정작 넙죽이가 왜 KAIST를 대표하는 마스코트로 자리 잡게 되었는지는 KAISTian도 잘 모른다. 등장한 순간부터 유명 인사가 된 현재까지, 넙죽이에게는 여러 에피소드가 있었다. 뾰족한 넙죽이를 둥근 모양으로 새로 디자인해 셀럽이 되게 만들어준, KAIST 산업디자인학과 석현정 교수를 만나 넙죽이가 유명해질 수밖에 없었던 이유에 대해 들어봤다.",
     },
     body: [
-      {
-        type: "image",
-        image: "/images/23-summer/6-1.png",
-        caption: "KAIST 공식 마스코트 넙죽이. ⓒKAIST",
-      },
       {
         type: "subtitle",
         text: "2014년, 세상 밖으로 나온 넙죽이",
@@ -703,15 +690,12 @@ export const data23summer: Article[] = [
       },
       {
         type: "subtitle",
-        text: "INTERVIEW",
-      },
-      {
-        type: "subtitle",
-        text: "넙죽이를 ‘셀럽’으로 만들어준 석현정 KAIST 산업디자인학과 교수",
+        text: "INTERVIEW: 넙죽이를 ‘셀럽’으로 만들어준 석현정 KAIST 산업디자인학과 교수",
       },
       {
         type: "image",
         image: "/images/23-summer/6-7.jpg",
+        caption: "석현정 KAIST 산업디자인학과 교수",
       },
       {
         type: "subtitle",
@@ -761,17 +745,14 @@ export const data23summer: Article[] = [
     category: "KAISTian 어셈블 - 졸업생",
     header: {
       title: "잠재력을 발굴하는 교육을 꿈꾼다. 이채린, 최유진 동문",
+      image: "/images/23-summer/7-1.jpg",
+      image_caption: "클라썸 공동 대표 이채린, 최유진 동문",
       author:
         "글 / 박하윤 학생기자 stella0826@kaist.ac.kr, 김준서 학생기자 joonseo@kaist.ac.kr · 사진 / 클라썸",
       caption:
         "공부하다 모르는 내용이 생겼을 때, 서로 자유롭게 질문하고 답변해주며 소통할 수 있는 플랫폼이 있다. 바로 교육계의 ‘카카오톡’이라 불리는 ‘클라썸’이다. KAIST, 서울대학교, 연세대학교뿐만 아니라 삼성, LG 등의 기업에서도 클라썸을 이용하고 있다. 현재는 교육 커뮤니케이션 플랫폼에서 더 나아가 지식 공유 플랫폼으로도 확대돼, 전 세계 32개국, 1만 1,000개 이상의 학교와 기업에서 사용되고 있다. KAIST 전산학부를 졸업하고 클라썸 공동 대표(CEO)를 맡고 있는 이채린, 최유진 동문을 소개한다.",
     },
     body: [
-      {
-        type: "image",
-        image: "/images/23-summer/7-1.jpg",
-        caption: "클라썸 공동 대표 이채린, 최유진 동문",
-      },
       {
         type: "subtitle",
         text: "Q. KAIST를 다닐 때 어떤 학생이었나?",
@@ -862,16 +843,13 @@ export const data23summer: Article[] = [
     category: "KAISTian 어셈블 - 학부생",
     header: {
       title: "코딩을 향한 끊임없는 도전, 최은수 학우",
+      image: "/images/23-summer/8-1.jpg",
+      image_caption: "최은수 학우. ©김예림",
       author: "글 / 김예림 학생기자 019llimm@kaist.ac.kr · 사진 / 최은수",
       caption:
         "무언가에 매료되어 시간 가는 줄 모르게 몰두했던 경험이 있는가. 누군가에게는 그 ‘무언가’가 곧 진로가 되기도 한다. 반면 또 다른 누군가는 자신을 흥미롭게 하는 ‘무언가’를 찾기 위해 지금도 다양한 시도를 하고 있을지 모르겠다. KAIST가 새내기과정학부 제도를 통해 2학년 직전에 학과를 선택하도록 하는 이유도 학생 본인에게 맞는 학과를 찾아가도록 하기 위해서다. 물론, 본인의 특기를 일찍 찾아 꾸준히 노력하는 학생들도 있다. 하고 싶은 일을 향해 끊임없이 도전하는 KAISTian, 전산학부 21학번 최은수 학우를 소개한다.",
     },
     body: [
-      {
-        type: "image",
-        image: "/images/23-summer/8-1.jpg",
-        caption: "최은수 학우. ©김예림",
-      },
       {
         type: "subtitle",
         text: "Q. 코딩을 어떻게 접하였으며, 코딩의 어떤 부분이 매력적으로 다가왔는가?",
@@ -965,14 +943,12 @@ export const data23summer: Article[] = [
     header: {
       title: "하늘과의 대화, 우주와의 교감 KAIST 천체관측 동아리 ‘별바라기’",
       author: "글 / 이윤정 학생기자 yoonjung29681@kaist.ac.kr",
+      image: "/images/23-summer/9-1.jpg",
+      image_caption: "ⓒshutterstock",
       caption:
         "KAIST 천체관측 동아리인 ‘별바라기’는 1987년부터 시작된 유서 깊은 천체관측 동아리다. 매주 태울관 옥상에서 안시(맨눈) 및 사진 관측을 진행하고 있으며, 날씨가 좋지 않은 날에는 동아리방에서 기본적인 천체관측 지식을 배우는 시간을 갖는다. 이윤정 학생기자가 일일부원이 되어 별바라기의 활동을 가까이서 경험해 보았다.",
     },
     body: [
-      {
-        type: "image",
-        image: "/images/23-summer/9-1.jpg",
-      },
       {
         type: "text",
         text: "별바라기는 매주 화요일, 수요일, 목요일 밤 10시에 태울관에 모여서 천체를 관측한다. 별바라기에서 진행하는 천체관측은 장비 없이 직접 눈으로 보는 안시 관측과 사진, 영상을 촬영하는 사진 관측으로 나뉜다.",
@@ -1001,11 +977,7 @@ export const data23summer: Article[] = [
       },
       {
         type: "subtitle",
-        text: "INTERVIEW",
-      },
-      {
-        type: "subtitle",
-        text: "별바라기 회장 오윤종 학생",
+        text: "INTERVIEW: 별바라기 회장 오윤종 학생",
       },
       {
         type: "subtitle",
@@ -1153,12 +1125,12 @@ export const data23summer: Article[] = [
       },
       {
         type: "image",
-        image: "/images/23-summer/11-1.jpg",
+        image: "/images/23-summer/11-2.jpg",
         caption: "‘카이누리가 간다’에 참여한 학생들과 김수빈 대사.",
       },
       {
         type: "image",
-        image: "/images/23-summer/11-2.jpg",
+        image: "/images/23-summer/11-1.jpg",
         caption: "KAIST 간담회를 경청하는 학생들.",
       },
     ],
@@ -1169,7 +1141,8 @@ export const data23summer: Article[] = [
     category: "(주)카눌투어",
     header: {
       title: "1993 대전 엑스포, 지난 30년의 흔적을 찾아서",
-      author: "",
+      author:
+        "글, 사진 / 정예안 학생기자 yean919@kaist.ac.kr, 여남규 학생기자 prism011312@kaist.ac.kr",
       caption:
         "지금으로부터 30년 전인 1993년, ‘새로운 도약으로의 길 – 전통기술과 현대과학의 조화, 자원의 효율적 이용과 재활용’을 주제로 대전 엑스포가 열렸다. 전 세계 108개 국가와 33개의 국제기구가 참가했고, 국내외 1450만 명의 관람객이 엑스포를 보기 위해 대전을 찾았다. 대전 엑스포는 대한민국의 저력을 세계에 각인하고, 희망으로 가득 찼던 대한민국의 황금기를 상징하는 행사였다. 30주년을 맞아, 지금도 많은 사람이 기념하고 추억하는 대전 엑스포의 열기를 찾아 떠나보자.",
     },
@@ -1183,50 +1156,18 @@ export const data23summer: Article[] = [
         text: "엑스포다리는 대전 엑스포를 위해 가설한 아치형 보행 현수교이다. 태극 무늬를 상징화한 빨간색, 파란색 두 타원형 아치 구조가 다리 양면으로 교차하고, 여기에 다리의 무게를 지탱하는 케이블을 연결하였다. 케이블은 총 100개로, 이는 우리나라가 1893 시카고 엑스포를 시작으로 엑스포 참가 100주년에 개최국이 된 것을 기념한다. 당시에는 한빛탑 광장과 남문 주차장을 연결하는 용도였지만, 지금은 대전의 명소들인 엑스포과학공원과 한밭수목원을 이어주고 있다. 구조적인 간결함 속에 녹아든 아름다운 모습과 아래에 흐르는 갑천과의 조화로움을 느낄 수 있다. 2009년부터는 야간조명을 설치한 덕에 멋진 야경 또한 감상할 수 있게 되면서 명실상부 대전광역시의 대표 다리로 불리며 많은 사람이 방문하고 있다.",
       },
       {
+        type: "image",
+        image: "/images/23-summer/12-1.jpg",
+        caption:
+          "사진 1 엑스포 다리는 산책길로도 관광명소로도 손에 꼽히는 장소이다.",
+      },
+      {
         type: "subtitle",
         text: "대전엑스포기념관: 대전 유성구 대덕대로 480",
       },
       {
         type: "text",
         text: "대전 엑스포 개최 당시 ‘평화 우정관’으로 쓰였던 건물이 엑스포 폐막 이후 대전 엑스포를 기념하기 위한 전시관으로 변경되며 개관하였다. 대전 엑스포의 마스코트 ‘꿈돌이’가 반겨주는 입구에는 근대 엑스포의 역사를 한눈에 알아보기 쉽게 정리한 전시가 있으며, 오른쪽으로 들어가면 본격적인 전시가 시작된다. 기념관 내부는 대전 엑스포의 시작부터 끝이 기억의 장, 전환의 장, 염원의 장, 화합의 장, 환희의 장이라는 5가지 테마로 나뉘며, 다양한 모형과 영상들로 현장감을 불러일으킨다. 30년이 지난 지금까지도 대전 엑스포의 모습을 생생하게 떠올릴 수 있는 소중한 공간이다.",
-      },
-      {
-        type: "subtitle",
-        text: "한빛탑과 음악분수: 대전 유성구 대덕대로 480",
-      },
-      {
-        type: "subtitle",
-        text: "• 음악분수대: 화요일~일요일 / 15:00~17:00, 19:00~21:00까지 1시간 간격으로 운영",
-      },
-      {
-        type: "subtitle",
-        text: "• 미디어 파사드: 19:30, 20:30에 한빛탑에서 진행",
-      },
-      {
-        type: "text",
-        text: "한빛탑은 대전 엑스포를 기념하기 위해 지어진 상징 조형물로, 엑스포 개최 연도에 맞춰 93m로 지어졌다. 한빛은 ‘지혜로운 과거를 바탕으로 현재와 미래를 잇는 한 줄기 빛’이라는 뜻으로, 조형물에도 그 의미가 담겨있다. 하단부는 ‘과거’의 경주 첨성대를 의미하는 화강암 1993개로 만들었으며, 중앙부의 고리형 전망대는 발전한 ‘현재’의 과학 대한민국을, 상단부의 원뿔은 ‘미래’로의 도약 의지가 뿜어내는 빛을 상징한다. 빛, 과학, 우주를 모티브로 한 조형물인 한빛탑은 미래지향적인 디자인으로 여전히 사랑받고 있다. 한빛탑의 앞에는 음악분수와 함께 한빛광장이 마련되어 있어 시민들의 여름 피서지 역할을 톡톡히 하고 있다.",
-      },
-      {
-        type: "subtitle",
-        text: "한빛맥주축제: 대전 유성구 대덕대로 480",
-      },
-      {
-        type: "text",
-        text: "대전 엑스포 30주년을 맞아 한빛탑 광장에서 한빛맥주축제가 열렸다. 맥주 부스와 함께 다양한 음식을 파는 푸드트럭들이 광장에 자리 잡았다. 또한 테이블존 옆에는 디제잉 부스가 있어 노래와 함께 음식을 즐길 수 있다. 해가 서서히 지며 하나씩 켜지는 조명 아래에서 음악분수를 보며 맥주와 음식을 즐기니, 서울 한강공원이 부럽지 않은 아름다운 경험이었다.",
-      },
-      {
-        type: "subtitle",
-        text: "대전 사이언스콤플렉스(대전 엑스포타워): 대전 유성구 엑스포로 1",
-      },
-      {
-        type: "text",
-        text: "한빛탑 광장의 서쪽에는 대전의 새로운 랜드마크, 대전 사이언스콤플렉스가 있다. 사이언스콤플렉스는 포디움(백화점동)과 엑스포타워(타워동)으로 나뉜다. 엑스포타워는 대전광역시에서 가장 높은 건물이자, 수도권과 부산을 제외한 비수도권에서 가장 높은 비주거용 건물로 단연 눈에 띈다. 개최 연도를 담아 193m의 높이로 건설됐는데, 38층에는 세계에서 2번째로 높은 스타벅스, 40~42층에는 아트전망대 ‘디 아트 스페이스 193’가 있다. 현재는 올라퍼 엘리아슨의 전시 ‘살아 있는 전망대 The Living Observatory, 2021’를 관람할 수 있다. 작가는 과학적 원리를 이용한 전시물로 일상적인 풍경도 다르게 보이게 하는 경험을 선사한다. 세계인에게 추억을 선사했던 과거의 엑스포 공간은, 대전 유일의 마천루로 탈바꿈하여 대전시민들과 관광객들에게 새로움을 주고 있다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/12-1.jpg",
-        caption:
-          "사진 1 엑스포 다리는 산책길로도 관광명소로도 손에 꼽히는 장소이다.",
       },
       {
         type: "image",
@@ -1246,6 +1187,26 @@ export const data23summer: Article[] = [
           "사진 4 대전엑스포의 역사를 다양한 전시물을 통해 한눈에 볼 수 있다.",
       },
       {
+        type: "subtitle",
+        text: "한빛탑과 음악분수: 대전 유성구 대덕대로 480",
+      },
+      {
+        type: "subtitle",
+        text: "• 음악분수대",
+      },
+      {
+        type: "text",
+        text: "화요일~일요일 / 15:00~17:00, 19:00~21:00까지 1시간 간격으로 운영",
+      },
+      {
+        type: "subtitle",
+        text: "• 미디어 파사드: 19:30, 20:30에 한빛탑에서 진행",
+      },
+      {
+        type: "text",
+        text: "한빛탑은 대전 엑스포를 기념하기 위해 지어진 상징 조형물로, 엑스포 개최 연도에 맞춰 93m로 지어졌다. 한빛은 ‘지혜로운 과거를 바탕으로 현재와 미래를 잇는 한 줄기 빛’이라는 뜻으로, 조형물에도 그 의미가 담겨있다. 하단부는 ‘과거’의 경주 첨성대를 의미하는 화강암 1993개로 만들었으며, 중앙부의 고리형 전망대는 발전한 ‘현재’의 과학 대한민국을, 상단부의 원뿔은 ‘미래’로의 도약 의지가 뿜어내는 빛을 상징한다. 빛, 과학, 우주를 모티브로 한 조형물인 한빛탑은 미래지향적인 디자인으로 여전히 사랑받고 있다. 한빛탑의 앞에는 음악분수와 함께 한빛광장이 마련되어 있어 시민들의 여름 피서지 역할을 톡톡히 하고 있다.",
+      },
+      {
         type: "image",
         image: "/images/23-summer/12-5.jpg",
         caption: "사진 5 한빛탑의 외관은 빛, 과학, 우주를 모티브로 설계되었다.",
@@ -1254,6 +1215,22 @@ export const data23summer: Article[] = [
         type: "image",
         image: "/images/23-summer/12-6.jpg",
         caption: "사진 6 음악에 맞춰 화려한 분수쇼를 볼 수 있다.",
+      },
+      {
+        type: "subtitle",
+        text: "한빛맥주축제: 대전 유성구 대덕대로 480",
+      },
+      {
+        type: "text",
+        text: "대전 엑스포 30주년을 맞아 한빛탑 광장에서 한빛맥주축제가 열렸다. 맥주 부스와 함께 다양한 음식을 파는 푸드트럭들이 광장에 자리 잡았다. 또한 테이블존 옆에는 디제잉 부스가 있어 노래와 함께 음식을 즐길 수 있다. 해가 서서히 지며 하나씩 켜지는 조명 아래에서 음악분수를 보며 맥주와 음식을 즐기니, 서울 한강공원이 부럽지 않은 아름다운 경험이었다.",
+      },
+      {
+        type: "subtitle",
+        text: "대전 사이언스콤플렉스(대전 엑스포타워): 대전 유성구 엑스포로 1",
+      },
+      {
+        type: "text",
+        text: "한빛탑 광장의 서쪽에는 대전의 새로운 랜드마크, 대전 사이언스콤플렉스가 있다. 사이언스콤플렉스는 포디움(백화점동)과 엑스포타워(타워동)으로 나뉜다. 엑스포타워는 대전광역시에서 가장 높은 건물이자, 수도권과 부산을 제외한 비수도권에서 가장 높은 비주거용 건물로 단연 눈에 띈다. 개최 연도를 담아 193m의 높이로 건설됐는데, 38층에는 세계에서 2번째로 높은 스타벅스, 40~42층에는 아트전망대 ‘디 아트 스페이스 193’가 있다. 현재는 올라퍼 엘리아슨의 전시 ‘살아 있는 전망대 The Living Observatory, 2021’를 관람할 수 있다. 작가는 과학적 원리를 이용한 전시물로 일상적인 풍경도 다르게 보이게 하는 경험을 선사한다. 세계인에게 추억을 선사했던 과거의 엑스포 공간은, 대전 유일의 마천루로 탈바꿈하여 대전시민들과 관광객들에게 새로움을 주고 있다.",
       },
       {
         type: "image",
@@ -1278,72 +1255,20 @@ export const data23summer: Article[] = [
     category: "카눌극장",
     header: {
       title: "5시에 KAIST에서 사랑이 싹틀 거예요!",
-      author: "",
+      author: "글, 사진 / 배지혁 학생기자 baejh357@kaist.ac.kr",
       caption:
         "미래를 보는 능력이 있는 준서는 KAIST에서 그 능력을 유용하게 쓰고 있다. 짧은 만화를 통해 평범할 날 없는 준서의 일상을 엿보자.",
     },
     body: [
       {
         type: "image",
-        image: "/images/23-summer/13-1.jpg",
-        caption: "나에게는 미래를 보는 능력이 있다.",
+        image: "/images/23-summer/13-1.png",
+        full_width: true,
       },
       {
         type: "image",
-        image: "/images/23-summer/13-2.jpg",
-        caption: "남: 오늘 출석 체크하니까 꼭 가!",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-3.jpg",
-        caption: "여: 교수님이 안 한다고 그러셨는데…",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-4.jpg",
-        caption:
-          "남: 다들 수업을 똑바로 듣지 않는 것 같아 오늘부터 출석을 확인하겠습니다. 이 능력은 참 유용하다.",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-5.jpg",
-        caption: "남: 오늘 퀴즈 답 5번이야!",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-6.jpg",
-        caption: "여: 오케이! 잘 보고 올게!",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-7.jpg",
-        caption: "남: 우산 꼭 챙겨!",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-8.jpg",
-        caption: "여: 날씨 맑은데? 뭐야, 갑자기 비가 오네?",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-9.jpg",
-        caption: "가끔은...",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-10.jpg",
-        caption:
-          "남: 너, 나랑 사귀지 않으면 이 세상이 멸망할 거야! / 여: 뭐라고?",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-11.jpg",
-        caption: "남: 일단 손부터 빨리 잡자!",
-      },
-      {
-        type: "image",
-        image: "/images/23-summer/13-12.jpg",
-        caption: "이렇게 도움이 될 때도 있다.",
+        image: "/images/23-summer/13-2.png",
+        full_width: true,
       },
     ],
   },
@@ -1354,17 +1279,26 @@ export const data23summer: Article[] = [
     header: {
       title: "딸기가 좋아! 딸기가 좋아!",
       author: "",
-      caption:
-        "벚꽃과 즐기는 KAIST의 축제 '딸기파티' &lt;KAIST비전&gt; 독자 여러분, 잘 지내셨나요? 하늘에서 내리쬐는 햇살과 사람들의 얇아진 옷차림을 보니 여름이 성큼 다가왔음을 실감합니다. 그 말인즉슨, 곧 학기가 마무리된다는 말이지요! 카이누리 대사들도 봄학기를 끝마치고 2023 여름 창의적 글로벌 리더(창글리)캠프를 준비하고 있습니다. 학생들과 함께 창글리 캠프를 즐길 생각에 벌써 설레네요! 이번 여름호에서는 KAIST만의 특별한 축제, ‘딸기파티’를 소개해드리고자 합니다. ‘딸기파티’는 1995년 학교 주변 딸기 농가를 돕기 위해 시작되어 약 30년 동안 이어지고 있는 KAIST만의 전통적인 행사예요. 벚꽃이 가장 아름다운 시기인 매년 3~4월, 새터반이나 동아리 등의 KAISTian들이 캠퍼스 곳곳에 삼삼오오 모여 딸기와 함께 다양한 음식을 나눠 먹으며 이야기를 나누곤 한답니다. 카이누리도 학술문화관 앞 잔디광장에 모여서 딸기파티를 즐겼어요! 카이누리는 어떻게 딸기파티를 즐겼을지 함께 보러 가실까요? QR코드를 찍어 카이누리 유튜브에서 확인해보세요!",
+      image: "/images/23-summer/14-1.jpg",
+      caption: "벚꽃과 즐기는 KAIST의 축제 '딸기파티'",
     },
     body: [
       {
-        type: "image",
-        image: "/images/23-summer/14-1.jpg",
+        type: "text",
+        text: "<KAIST비전> 독자 여러분, 잘 지내셨나요? 하늘에서 내리쬐는 햇살과 사람들의 얇아진 옷차림을 보니 여름이 성큼 다가왔음을 실감합니다. 그 말인즉슨, 곧 학기가 마무리된다는 말이지요! 카이누리 대사들도 봄학기를 끝마치고 2023 여름 창의적 글로벌 리더(창글리)캠프를 준비하고 있습니다. 학생들과 함께 창글리 캠프를 즐길 생각에 벌써 설레네요!",
+      },
+      {
+        type: "text",
+        text: "이번 여름호에서는 KAIST만의 특별한 축제, ‘딸기파티’를 소개해드리고자 합니다. ‘딸기파티’는 1995년 학교 주변 딸기 농가를 돕기 위해 시작되어 약 30년 동안 이어지고 있는 KAIST만의 전통적인 행사예요. 벚꽃이 가장 아름다운 시기인 매년 3~4월, 새터민이나 동아리 등의 KAISTian들이 캠퍼스 곳곳에 삼삼오오 모여 딸기와 함께 다양한 음식을 나누며 먹으며 이야기를 나누곤 한답니다.",
+      },
+      {
+        type: "text",
+        text: "카이누리도 학술문화관 앞 잔디광장에 모여서 딸기파티를 즐겼어요! 카이누리는 어떻게 딸기파티를 즐겼을지 함께 보러 가실까요? QR코드를 찍어 카이누리 유튜브에서 확인해보세요!",
       },
       {
         type: "image",
         image: "/images/23-summer/14-2.png",
+        width: 128,
       },
     ],
   },
@@ -1373,44 +1307,18 @@ export const data23summer: Article[] = [
     index: "15",
     category: "KAIST-MOOCs",
     header: {
-      title: "KAIST 학생이 아니어도 KAIST 강좌를 수강하는 방법",
+      title: "KAIST-MOOCs",
     },
     body: [
       {
-        type: "text",
-        text: "KAIST 교수님들의 수업을 KAIST에 입학하지 않아도 무료로 수강할 수 있어요-!",
-      },
-      {
-        type: "text",
-        text: "우와-! 제가 들을 수 있을까요?",
-      },
-      {
-        type: "text",
-        text: "내용이 어렵지 않을까요?",
-      },
-      {
-        type: "text",
-        text: "초급자를 위한 가벼운 강좌부터 정규수업 그대로 제공하는 강좌, 전공 맞춤, 심화 강좌 등을 강좌 소개 영상을 보고 골라 들어보세요-!",
-      },
-      {
-        type: "text",
-        text: "어디에서 들을 수 있나요?",
-      },
-      {
-        type: "text",
-        text: "네이버에 KOOC 또는 KAIST MOOC을 검색해보세요. 그 외 영어 강좌는 coursera.org 에서 KAIST를 검색하면 들을 수 있어요-!",
-      },
-      {
-        type: "text",
-        text: "우와-! 다음에 꼭 시간 내서 들어볼게요-!",
-      },
-      {
-        type: "text",
-        text: "잊지 말고 꼭 수강해주시고, 후기도 많이 많이 남겨주세요. 여러분의 수강을 기다립니다~~!!!!",
+        type: "image",
+        image: "/images/23-summer/15-2.png",
+        full_width: true,
       },
       {
         type: "image",
         image: "/images/23-summer/15-1.jpg",
+        full_width: true,
       },
     ],
   },
@@ -1419,10 +1327,14 @@ export const data23summer: Article[] = [
     index: "16",
     category: "연구쏙쏙",
     header: {
-      title: "드림워커, 보지 않고도 계단을 성큼성큼 걷다",
+      title: "연구쏙쏙",
       author: "",
     },
     body: [
+      {
+        type: "subtitle",
+        text: "드림워커, 보지 않고도 계단을 성큼성큼 걷다",
+      },
       {
         type: "image",
         image: "/images/23-summer/16-1.jpg",
@@ -1532,6 +1444,7 @@ export const data23summer: Article[] = [
       {
         type: "image",
         image: "/images/23-summer/17-1.jpg",
+        full_width: true,
       },
     ],
   },
@@ -1595,60 +1508,14 @@ export const data23summer: Article[] = [
     },
     body: [
       {
-        type: "subtitle",
-        text: "KAIST의 학생선발 인재상",
-      },
-      {
-        type: "text",
-        text: "○ 과학기술 분야에 전문성을 갖추고, 지식 탐구가 즐거운 자기주도적 학생",
-      },
-      {
-        type: "text",
-        text: "○ 새로운 길을 개척하려는 열정과 도전 의지를 가진 학생",
-      },
-      {
-        type: "text",
-        text: "○ 높은 윤리의식과 협력정신으로 국가와 사회, 인류에 기여하려는 학생",
-      },
-      {
-        type: "subtitle",
-        text: "1. 학사과정 개설 학부 및 학과",
-      },
-      {
-        type: "text",
-        text: "• KAIST는 학과 구분 없이 모집하며, 학생들은 입학 후 1학년 말에 학과를 자유롭게 선택함(학과별 정원 제한 없음).",
-      },
-      {
-        type: "text",
-        text: "* 단, 반도체시스템공학과는 삼성전자와의 계약학과로 무학과 모집을 하지 않음. 반도체시스템공학과로 입학을 희망하는 학생은 입학지원 시 ‘반도체시스템공학과’를 선택해야 하며, 전형 과정에서는 학과 선택 구분 없이 통합하여 평가됨. 최종합격자 발표 시 KAIST 반도체시스템공학과로 소속학과가 확정되며, 동 학과의 정원을 초과할 경우 새내기과정학부(무학과)로 배정될 수 있음.",
-      },
-      {
-        type: "text",
-        text: "* 반도체시스템공학과 운영에 대한 세부사항은 모집요강 학과소개 부분 참고",
-      },
-      {
-        type: "text",
-        text: "Join KAIST, Be the Best in the World!",
-      },
-      {
-        type: "subtitle",
-        text: "2. 모집인원 및 지원자격",
-      },
-      {
-        type: "text",
-        text: "* 표시한 정원 외 인원은 반도체시스템공학과 모집인원임.",
-      },
-      {
-        type: "text",
-        text: "※ 정확한 모집인원 및 전형방법은 원서접수 전 반드시 KAIST 모집요강 또는 입학처 홈페이지를 통해 확인하시기 바랍니다.",
-      },
-      {
         type: "image",
         image: "/images/23-summer/19-1.jpg",
+        full_width: true,
       },
       {
         type: "image",
         image: "/images/23-summer/19-2.jpg",
+        full_width: true,
       },
     ],
   },

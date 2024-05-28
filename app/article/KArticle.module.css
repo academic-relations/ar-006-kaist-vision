@@ -3,18 +3,21 @@
   padding: 2rem;
   text-align: center;
   color: var(--nextui-colors-text);
+  white-space: pre-line;
 }
 
 .title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  white-space: pre-line;
 }
 
 .author {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  white-space: pre-line;
 }
 
 .headerImage {
@@ -28,6 +31,7 @@
   margin-top: 1rem;
   font-size: 1rem;
   color: var(--nextui-colors-text);
+  white-space: pre-line;
 }
 
 .text {
@@ -35,6 +39,7 @@
   line-height: 1.6;
   font-size: 1rem;
   color: var(--nextui-colors-text);
+  white-space: pre-line;
 }
 
 .subtitle {
@@ -42,6 +47,7 @@
   margin: 2rem 0 1rem 0;
   font-weight: bold;
   color: var(--nextui-colors-text);
+  white-space: pre-line;
 }
 
 .imageContainer {
