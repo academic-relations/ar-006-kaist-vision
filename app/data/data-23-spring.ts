@@ -1298,6 +1298,7 @@ export const data23spring: Article[] = [
     category: "ON-NURI",
     header: {
       title: "2023 겨울 창의적 글로벌 리더 캠프",
+      image: "/images/23-spring/15-0.JPG",
     },
     body: [
       {
@@ -1311,6 +1312,46 @@ export const data23spring: Article[] = [
       {
         type: "text",
         text: "이번 겨울에는 영재학교, 과학고 친구들을 대상으로 창글리를 진행하였는데요, 언제나 인기만점 대학 캠프인 창글리답게 학생들의 반응은 한겨울의 추위도 녹일 만큼 정말 뜨거웠습니다. 과연 창글리에서는 어떤 활동을 진행했을까요? 궁금하시다면 위에 있는 QR코드를 찍어 카이누리 유튜브에서 확인해보세요!",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-1.JPG",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-2.JPG",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-3.JPG",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-4.JPG",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-5.jpg",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-6.jpg",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-7.jpg",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-8.jpg",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-9.jpg",
+      },
+      {
+        type: "image",
+        image: "/images/23-spring/15-10.jpg",
       },
     ],
   },
