@@ -1,7 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { createServerSupabase } from "../../utils/supabase/server";
+import { createServerSupabase } from "../../../utils/supabase/server";
 
 export async function logout() {
   const supabase = createServerSupabase();

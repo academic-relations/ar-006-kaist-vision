@@ -10,6 +10,7 @@ export type Volume = {
 };
 
 export type Article = {
+  id: number;
   volume_id: number;
   index: number;
   category: string;

@@ -1,3 +1,5 @@
-export default async function Page() {
-  return <p>Hello</p>;
+import { redirect } from "next/navigation";
+
+export default function Page() {
+  redirect("/admin/volumes");
 }
