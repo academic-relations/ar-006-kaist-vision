@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Providers } from "./providers";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import styles from "./layout.module.css";
+import styles from "./footer.module.css";
 
 export const metadata: Metadata = {
   title: "KAIST Vision",
