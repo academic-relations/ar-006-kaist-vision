@@ -1,5 +1,5 @@
-import { link } from "fs";
-import { Article, ArticleImage, articleDump } from "../../../utils";
+import { createServerSupabase } from "../../../../utils/supabase/server";
+import { Article, ArticleImage } from "../../../../utils/types";
 import {
   KArticle,
   KHeader,
@@ -9,12 +9,12 @@ import {
   Subtitle,
 } from "../../components";
 
-export default function ArticlePage({
+export default async function ArticlePage({
   params,
 }: {
-  params: { volume: string; index: string };
+  params: { volumeId: string; index: string };
 }) {
-  const article = getArticle(params.volume, params.index);
+  const article = await getArticle(params.volumeId, params.index);
 
   return (
     <KArticle
@@ -27,7 +27,7 @@ export default function ArticlePage({
           image_caption={article?.header.image_caption}
         />
       }
-      neighbors={getArticleWithNeighbors(params.volume, params.index)}
+      neighbors={await getArticleWithNeighbors(params.volumeId, params.index)}
     >
       {article?.body.map((content: any, index: number) => {
         switch (content.type) {
@@ -62,35 +62,44 @@ export default function ArticlePage({
   );
 }
 
-function getArticle(volume: string, index: string) {
-  return articleDump.find(
-    (article) => volume === article.volume && index === article.index
-  );
+async function getArticle(volumeId: string, articleIndex: string) {
+  const supabase = createServerSupabase();
+  const { data: volume } = await supabase
+    .from("volumes")
+    .select("*")
+    .eq("id", volumeId)
+    .single();
+  const { data: article } = await supabase
+    .from("articles")
+    .select("*")
+    .eq("volume_id", volume.id)
+    .eq("index", articleIndex)
+    .single();
+  return article as Article;
 }
 
-const getArticleWithNeighbors = (volume: string, index: string) => {
-  const currentArticle = articleDump.find(
-    (article) => article.volume === volume && article.index === index
-  );
-  if (!currentArticle) {
-    return { previous: undefined, next: undefined };
-  }
-  const currentVolume = articleDump.filter((item) => item.volume === volume);
-  const currentIndex = currentVolume.indexOf(currentArticle);
+async function getArticleWithNeighbors(volumeId: string, articleIndex: string) {
+  const supabase = createServerSupabase();
+  const { data: previousArticle } = await supabase
+    .from("articles")
+    .select("*")
+    .eq("volume_id", volumeId)
+    .eq("index", Number(articleIndex) - 1)
+    .single();
 
-  const previousArticle =
-    currentIndex > 0 ? currentVolume[currentIndex - 1] : undefined;
-  const nextArticle =
-    currentIndex < articleDump.length - 1
-      ? currentVolume[currentIndex + 1]
-      : undefined;
+  const { data: nextArticle } = await supabase
+    .from("articles")
+    .select("*")
+    .eq("volume_id", volumeId)
+    .eq("index", Number(articleIndex) + 1)
+    .single();
 
   return {
     previous: previousArticle
       ? {
           title: previousArticle.header.title,
           category: previousArticle.category,
-          link: `/article/${previousArticle.volume}/${previousArticle.index}`,
+          link: `/article/${previousArticle.volume_id}/${previousArticle.index}`,
           firstImage:
             previousArticle.header.image ??
             (
@@ -104,22 +113,15 @@ const getArticleWithNeighbors = (volume: string, index: string) => {
       ? {
           title: nextArticle.header.title,
           category: nextArticle.category,
-          link: `/article/${nextArticle.volume}/${nextArticle.index}`,
+          link: `/article/${nextArticle.volume_id}/${nextArticle.index}`,
           firstImage:
             nextArticle.header.image ??
             (
               nextArticle.body.find(
-                (item) => item.type === "image"
+                (item: any) => item.type === "image"
               ) as ArticleImage
             )?.image,
         }
       : undefined,
   };
-};
-
-export async function generateStaticParams() {
-  return articleDump.map((article: any) => ({
-    volume: article.volume,
-    index: article.index,
-  }));
 }

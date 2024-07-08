@@ -1,15 +1,17 @@
-import { data23spring } from "./data/data-23-spring";
-import { data23summer } from "./data/data-23-summer";
-import { data23wintera } from "./data/data-23-wintera";
-
 export const host =
   process.env.NODE_ENV === "production"
-    ? "https://vision.sparcs.org"
+    ? "https://kaistvision.kaist.ac.kr"
     : "http://localhost:3000";
 
+export type Volume = {
+  id: number;
+  year: number;
+  name: string;
+};
+
 export type Article = {
-  volume: string;
-  index: string;
+  volume_id: number;
+  index: number;
   category: string;
   header: {
     title: string;
@@ -45,9 +47,3 @@ type ArticleReview = {
   image: string;
   text: string;
 };
-
-export const articleDump: Article[] = [
-  ...data23spring,
-  ...data23summer,
-  ...data23wintera,
-];
