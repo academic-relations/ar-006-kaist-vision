@@ -1,5 +1,5 @@
 import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
-import { Article, ArticleImage } from "../../utils/types";
+import { Article, ArticleImage, createImageUrl } from "../../utils/types";
 import Link from "next/link";
 import styles from "./home.module.css";
 import { createServerSupabase } from "../../utils/supabase/server";
@@ -40,7 +40,7 @@ export default async function Home() {
       </p>
       <div className="flex flex-wrap justify-left gap-6">
         {articles
-          .filter((article) => article.volume_id === 3)
+          .filter((article) => article.volume_id === 8)
           .map((article: Article, index: number) => {
             let imageUrl;
             if (article.header.image) {
@@ -61,7 +61,7 @@ export default async function Home() {
                       style={{ height: "240px" }}
                     >
                       <Image
-                        src={imageUrl}
+                        src={createImageUrl(imageUrl)}
                         alt="기사 이미지"
                         style={{ objectFit: "cover" }}
                       />

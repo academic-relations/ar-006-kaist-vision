@@ -1,5 +1,5 @@
 import { createServerSupabase } from "../../../../utils/supabase/server";
-import { Article, ArticleImage } from "../../../../utils/types";
+import { Article, ArticleImage, createImageUrl } from "../../../../utils/types";
 import {
   KArticle,
   KHeader,
@@ -37,7 +37,7 @@ export default async function ArticlePage({
             return (
               <KImage
                 key={index}
-                src={content.image!}
+                src={createImageUrl(content.image)}
                 caption={content.caption}
                 width={content.width}
                 full_width={content.full_width}

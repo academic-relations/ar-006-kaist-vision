@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button, Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import styles from "./KArticle.module.css";
+import { createImageUrl } from "../../utils/types";
 
 type KHeaderProps = {
   subtitle?: string;
@@ -17,7 +18,7 @@ export const KHeader = (props: KHeaderProps) => (
     <p className={styles.author}>{props.author}</p>
     {props.image && (
       <Image
-        src={props.image}
+        src={createImageUrl(props.image)}
         className={styles.headerImage}
         alt="Header Image"
       />
@@ -103,7 +104,7 @@ type KNeighborCardProps = { isPrevious?: boolean } & KNeighborProps;
 const KNeighborCard = (props: KNeighborCardProps) => (
   <Card className={styles.card}>
     <Image
-      src={props.firstImage}
+      src={createImageUrl(props.firstImage)}
       alt="기사 이미지"
       className={styles.cardImage}
     />
