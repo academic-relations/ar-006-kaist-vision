@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button, Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import styles from "./KArticle.module.css";
-import { createImageUrl } from "../../utils/types";
+import { createImageUrl } from "../../utils/utils";
 
 type KHeaderProps = {
   subtitle?: string;

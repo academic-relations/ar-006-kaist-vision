@@ -22,7 +22,9 @@ export default async function Page(props: Props) {
         <Button
           className="m-3"
           as={Link}
-          href={`/admin/create-edit-article?volumeId=${volumeId}`}
+          href={`/admin/create-edit-article?volumeId=${volumeId}&index=${getNextIndex(
+            articles
+          )}`}
         >
           새 기사 추가하기
         </Button>
@@ -51,4 +53,13 @@ async function getVolume(volumeId: number): Promise<Volume> {
     .eq("id", volumeId)
     .single();
   return data;
+}
+
+function getNextIndex(articles: Article[]) {
+  const indexList = articles.map((article) => article.index);
+  if (indexList.length === 0) {
+    return 1;
+  } else {
+    return Math.max(...indexList) + 1;
+  }
 }

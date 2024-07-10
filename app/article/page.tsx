@@ -1,8 +1,9 @@
 import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
-import { Article, ArticleImage, createImageUrl } from "../../utils/types";
+import { Article, ArticleImage } from "../../utils/types";
 import Link from "next/link";
 import styles from "./home.module.css";
 import { createServerSupabase } from "../../utils/supabase/server";
+import { createImageUrl } from "../../utils/utils";
 
 export default async function Home() {
   const articles = await getAllArticles();

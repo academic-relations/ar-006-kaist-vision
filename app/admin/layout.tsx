@@ -14,7 +14,7 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <>
-      <Navbar>
+      <Navbar isBordered>
         <NavbarBrand>
           <Link href="/admin">
             <p className="font-bold text-inherit">관리자 콘솔</p>

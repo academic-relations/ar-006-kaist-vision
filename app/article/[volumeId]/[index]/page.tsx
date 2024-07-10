@@ -1,5 +1,6 @@
 import { createServerSupabase } from "../../../../utils/supabase/server";
-import { Article, ArticleImage, createImageUrl } from "../../../../utils/types";
+import { Article, ArticleImage } from "../../../../utils/types";
+import { createImageUrl } from "../../../../utils/utils";
 import {
   KArticle,
   KHeader,

@@ -24,7 +24,7 @@ export default async function Layout({ children }: Props) {
       <div className="flex flex-row gap-6 p-6">
         <div className="w-240px">
           <h2 className="m-3">Volume</h2>
-          <Button className="m-3" as={Link} href="/admin/create">
+          <Button className="m-3" as={Link} href="/admin/volumes/create">
             새 Volume 추가하기
           </Button>
           <VolumesTable volumes={volumes} />
