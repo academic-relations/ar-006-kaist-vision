@@ -37,6 +37,6 @@ export default async function Layout({ children }: Props) {
 
 async function getVolumes(): Promise<Volume[]> {
   const supabase = createServerSupabase();
-  const { data } = await supabase.from("volumes").select("*");
+  const { data } = await supabase.from("volumes").select("*").order("id");
   return data ?? [];
 }

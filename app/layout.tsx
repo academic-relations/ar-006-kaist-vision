@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Providers } from "./providers";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import styles from "./footer.module.css";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "KAIST Vision",
@@ -32,6 +33,7 @@ export default function RootLayout({
             </div>
           </footer>
         </Providers>
+        <Toaster />
         <GoogleAnalytics gaId="G-S5XHBJF9N1" />
       </body>
     </html>

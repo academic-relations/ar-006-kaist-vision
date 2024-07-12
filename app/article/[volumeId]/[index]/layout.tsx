@@ -69,6 +69,10 @@ async function getCategories(volumeId: number) {
 
 async function getVolumes(): Promise<Volume[]> {
   const supabase = createServerSupabase();
-  const { data } = await supabase.from("volumes").select("*");
+  const { data } = await supabase
+    .from("volumes")
+    .select("*")
+    .eq("is_visible", true)
+    .order("id");
   return data ?? [];
 }

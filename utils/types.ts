@@ -2,6 +2,7 @@ export type Volume = {
   id: number;
   year: number;
   name: string;
+  is_visible: boolean;
 };
 
 export type Article = {

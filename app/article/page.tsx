@@ -6,7 +6,8 @@ import { createServerSupabase } from "../../utils/supabase/server";
 import { createImageUrl } from "../../utils/utils";
 
 export default async function Home() {
-  const articles = await getAllArticles();
+  const volume = await getRecentVolume();
+  const articles = await getArticles(volume.id);
 
   return (
     <div className="container mx-auto px-4">
@@ -37,60 +38,73 @@ export default async function Home() {
         </div>
       </div>
       <p className="text-2xl font-semibold mt-16 mb-9 text-left">
-        2023년 가을겨울호
+        {`${volume.year}년 ${volume.name}호`}
       </p>
       <div className="flex flex-wrap justify-left gap-6">
-        {articles
-          .filter((article) => article.volume_id === 8)
-          .map((article: Article, index: number) => {
-            let imageUrl;
-            if (article.header.image) {
-              imageUrl = article.header.image;
-            } else if (Array.isArray(article.body)) {
-              const firstImage = article.body.find(
-                (item) => item.type === "image"
-              ) as ArticleImage;
-              imageUrl = firstImage?.image;
-            }
+        {articles.map((article: Article, index: number) => {
+          let imageUrl;
+          if (article.header.image) {
+            imageUrl = article.header.image;
+          } else if (Array.isArray(article.body)) {
+            const firstImage = article.body.find(
+              (item) => item.type === "image"
+            ) as ArticleImage;
+            imageUrl = firstImage?.image;
+          }
 
-            return (
-              <div key={index} className="max-w-sm w-full lg:w-1/3">
-                <Link href={`/article/${article.volume_id}/${article.index}`}>
-                  <Card className="h-full shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <CardHeader
-                      className="overflow-hidden rounded-t-lg"
-                      style={{ height: "240px" }}
-                    >
-                      <Image
-                        src={createImageUrl(imageUrl)}
-                        alt="기사 이미지"
-                        style={{ objectFit: "cover" }}
-                      />
-                    </CardHeader>
-                    <CardBody className="p-4">
-                      <div className="space-y-2">
-                        <p className="text-sm text-gray-500">
-                          {article.category}
-                        </p>
-                        <p className="text-lg font-semibold">
-                          {article.header.title}
-                        </p>
-                        <p className="text-gray-700">{article.header.author}</p>
-                      </div>
-                    </CardBody>
-                  </Card>
-                </Link>
-              </div>
-            );
-          })}
+          return (
+            <div key={index} className="max-w-sm w-full lg:w-1/3">
+              <Link href={`/article/${article.volume_id}/${article.index}`}>
+                <Card className="h-full shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <CardHeader
+                    className="overflow-hidden rounded-t-lg"
+                    style={{ height: "240px" }}
+                  >
+                    <Image
+                      src={createImageUrl(imageUrl)}
+                      alt="기사 이미지"
+                      style={{ objectFit: "cover" }}
+                    />
+                  </CardHeader>
+                  <CardBody className="p-4">
+                    <div className="space-y-2">
+                      <p className="text-sm text-gray-500">
+                        {article.category}
+                      </p>
+                      <p className="text-lg font-semibold">
+                        {article.header.title}
+                      </p>
+                      <p className="text-gray-700">{article.header.author}</p>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Link>
+            </div>
+          );
+        })}
       </div>
       <div className="h-32" />
     </div>
   );
 }
 
-async function getAllArticles() {
+async function getRecentVolume() {
   const supabase = createServerSupabase();
-  const { data: articles } = await supabase.from("articles").select("*");
+  const { data: volumes } = await supabase
+    .from("volumes")
+    .select("*")
+    .eq("is_visible", true)
+    .order("id", { ascending: false })
+    .limit(1);
+  return volumes ? volumes[0] : null;
+}
+
+async function getArticles(volumeId: number) {
+  const supabase = createServerSupabase();
+  const { data: articles } = await supabase
+    .from("articles")
+    .select("*")
+    .eq("volume_id", volumeId)
+    .order("index");
   return articles as Article[];
 }
