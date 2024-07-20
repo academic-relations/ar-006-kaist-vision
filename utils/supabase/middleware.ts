@@ -12,6 +12,7 @@ export async function updateSession(request: NextRequest) {
     {
       cookieOptions: {
         sameSite: "none",
+        path: "/",
       },
       cookies: {
         getAll() {
