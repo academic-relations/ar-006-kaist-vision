@@ -13,6 +13,7 @@ export async function updateSession(request: NextRequest) {
       cookieOptions: {
         sameSite: "none",
         path: "/",
+        secure: true,
       },
       cookies: {
         getAll() {
