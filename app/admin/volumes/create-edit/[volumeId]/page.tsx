@@ -1,11 +1,43 @@
+"use server";
 import { Input, Button } from "@nextui-org/react";
+import { createServerSupabase } from "../../../../../utils/supabase/server";
+import { redirect } from "next/navigation";
+import { Links } from "../../../../../utils/utils";
 
-export default function Page() {
-  function editVolume(formData: FormData) {
+type Props = {
+  params: {
+    volumeId: string;
+  };
+};
+
+async function getVolume(volumeId: string) {
+  const supabase = createServerSupabase();
+  const { data, error } = await supabase
+    .from("volumes")
+    .select("*")
+    .eq("id", volumeId)
+    .single();
+  return data;
+}
+
+export default async function Page(props: Props) {
+  const volume = await getVolume(props.params.volumeId);
+
+  async function editVolume(formData: FormData) {
+    "use server";
     const year = formData.get("year") as string;
     const name = formData.get("name") as string;
 
-    console.log(year, name);
+    const supabase = createServerSupabase();
+    const { error } = await supabase
+      .from("volumes")
+      .update({ year, name })
+      .eq("id", volume.id);
+    if (error) {
+      console.log(error);
+    } else {
+      redirect(Links.adminVolumes);
+    }
   }
 
   return (
@@ -15,12 +47,14 @@ export default function Page() {
           Volume 내용 수정하기
         </h2>
         <form>
+          <Input label="ID" disabled value={volume.id} className="mb-4" />
           <Input
             label="연도 (예: 2022)"
             id="year"
             name="year"
             placeholder="발간 연도를 입력해 주세요"
             className="mb-4"
+            defaultValue={volume.year}
           />
           <Input
             label="계절 (예: 가을겨울)"
@@ -28,9 +62,10 @@ export default function Page() {
             name="name"
             placeholder="'호'를 제외하고 입력해 주세요"
             className="mb-4"
+            defaultValue={volume.name}
           />
           <Button formAction={editVolume} type="submit">
-            생성하기
+            변경하기
           </Button>
         </form>
       </div>

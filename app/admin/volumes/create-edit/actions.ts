@@ -1,6 +1,7 @@
 "use server";
 import { redirect } from "next/navigation";
 import { createServerSupabase } from "../../../../utils/supabase/server";
+import { Links } from "../../../../utils/utils";
 
 export async function createVolume(formData: FormData) {
   const supabase = createServerSupabase();
@@ -14,6 +15,6 @@ export async function createVolume(formData: FormData) {
   if (error) {
     console.log(error);
   } else {
-    redirect("/admin");
+    redirect(Links.adminVolumes);
   }
 }

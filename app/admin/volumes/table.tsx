@@ -19,13 +19,15 @@ import { createClientSupabase } from "../../../utils/supabase/client";
 import { toast } from "sonner";
 import { VerticalDotsIcon } from "../../../components/icons";
 import { Links } from "../../../utils/utils";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 type Props = {
   volumes: Volume[];
 };
 
 export default function VolumesTable({ volumes }: Props) {
+  const router = useRouter();
+
   const onDelete = async (volumeId: number) => {
     if (!window.confirm("정말로 삭제하시겠습니까?")) {
       toast("삭제가 취소되었습니다.");
@@ -40,7 +42,8 @@ export default function VolumesTable({ volumes }: Props) {
       toast.error(error.message);
     } else {
       toast.success("볼륨이 성공적으로 삭제되었습니다.");
-      redirect(Links.adminVolumes);
+      router.push(Links.adminVolumes);
+      router.refresh();
     }
   };
 
@@ -55,8 +58,6 @@ export default function VolumesTable({ volumes }: Props) {
       </TableHeader>
       <TableBody>
         {volumes.map((volume: Volume) => {
-          const volumeLink = Links.adminVolume(volume.id);
-          console.log(`Volume Link for ID ${volume.id}:`, volumeLink); // Console log to check the link
           return (
             <TableRow key={volume.id}>
               <TableCell>{volume.id}</TableCell>
@@ -80,7 +81,7 @@ export default function VolumesTable({ volumes }: Props) {
                 />
               </TableCell>
               <TableCell className="flex flex-row items-center gap-2">
-                <Button as={Link} href={volumeLink}>
+                <Button as={Link} href={Links.adminVolume(volume.id)}>
                   기사 목록 보기
                 </Button>
                 <Dropdown>
@@ -90,7 +91,9 @@ export default function VolumesTable({ volumes }: Props) {
                     </Button>
                   </DropdownTrigger>
                   <DropdownMenu>
-                    <DropdownItem>수정</DropdownItem>
+                    <DropdownItem as={Link} href={Links.editVolume(volume.id)}>
+                      수정
+                    </DropdownItem>
                     <DropdownItem onClick={() => onDelete(volume.id)}>
                       삭제
                     </DropdownItem>
