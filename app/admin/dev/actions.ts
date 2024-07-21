@@ -29,7 +29,7 @@ export async function createArticles() {
   const supabase = createServerSupabase();
   const article23spring = data23spring.map((article) => {
     return {
-      volume_id: 6,
+      volume_id: 10,
       index: article.index,
       category: article.category,
       header: article.header,
@@ -38,7 +38,7 @@ export async function createArticles() {
   });
   const article23summer = data23spring.map((article) => {
     return {
-      volume_id: 7,
+      volume_id: 11,
       index: article.index,
       category: article.category,
       header: article.header,
@@ -47,7 +47,7 @@ export async function createArticles() {
   });
   const article23wintera = data23wintera.map((article) => {
     return {
-      volume_id: 8,
+      volume_id: 12,
       index: article.index,
       category: article.category,
       header: article.header,

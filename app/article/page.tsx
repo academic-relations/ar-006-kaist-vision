@@ -3,7 +3,7 @@ import { Article, ArticleImage } from "../../utils/types";
 import Link from "next/link";
 import styles from "./home.module.css";
 import { createServerSupabase } from "../../utils/supabase/server";
-import { createImageUrl } from "../../utils/utils";
+import { createImageUrl, Links } from "../../utils/utils";
 
 export default async function Home() {
   const volume = await getRecentVolume();
@@ -54,7 +54,7 @@ export default async function Home() {
 
           return (
             <div key={index} className="max-w-sm w-full lg:w-1/3">
-              <Link href={`/article/${article.volume_id}/${article.index}`}>
+              <Link href={Links.article(article.volume_id, article.index)}>
                 <Card className="h-full shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardHeader
                     className="overflow-hidden rounded-t-lg"

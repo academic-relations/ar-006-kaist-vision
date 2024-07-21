@@ -5,6 +5,7 @@ import styles from "./Layout.module.css";
 import TopButton from "../../../../components/top-button";
 import { createServerSupabase } from "../../../../utils/supabase/server";
 import VolumeSelect from "../../../../components/volume-select";
+import { Links } from "../../../../utils/utils";
 
 type ArticleButtonProps = { title: string; href?: string };
 
@@ -44,7 +45,7 @@ export default async function Layout(props: LayoutProps) {
                 <ArticleButton
                   key={index}
                   title={article.category}
-                  href={`/article/${article.volume_id}/${article.index}`}
+                  href={Links.article(article.volume_id, article.index)}
                 />
               );
             })}

@@ -3,6 +3,7 @@ import { createServerSupabase } from "../../../../utils/supabase/server";
 import { Article, Volume } from "../../../../utils/types";
 import ArticlesTable from "./table";
 import Link from "next/link";
+import { Links } from "../../../../utils/utils";
 
 type Props = {
   params: {
@@ -22,9 +23,7 @@ export default async function Page(props: Props) {
         <Button
           className="m-3"
           as={Link}
-          href={`/admin/create-edit-article?volumeId=${volumeId}&index=${getNextIndex(
-            articles
-          )}`}
+          href={Links.createEditArticle(volumeId, getNextIndex(articles))}
         >
           새 기사 추가하기
         </Button>

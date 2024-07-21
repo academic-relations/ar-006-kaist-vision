@@ -9,6 +9,7 @@ import {
 } from "@nextui-org/react";
 import { Volume } from "../utils/types";
 import { ChevronDownIcon } from "./icons";
+import { Links } from "../utils/utils";
 
 type Props = {
   volumes: Volume[];
@@ -33,7 +34,7 @@ export default function VolumeSelect(props: Props) {
       <DropdownMenu>
         {props.volumes.map((volume: Volume, index: number) => {
           return (
-            <DropdownItem key={index} href={`/article/${volume.id}/1`}>
+            <DropdownItem key={index} href={Links.article(volume.id, 1)}>
               {getVolumeName(volume)}
             </DropdownItem>
           );

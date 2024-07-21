@@ -7,6 +7,7 @@ import {
 } from "@nextui-org/react";
 import Link from "next/link";
 import { ThemeSwitch } from "../../components/theme-switch";
+import { Links } from "../../utils/utils";
 
 type Props = { children: React.ReactNode };
 
@@ -35,17 +36,17 @@ export default function Layout({ children }: Props) {
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <Link href="https://kaist.ac.kr" target="_blank">
+            <Link href={Links.kaist} target="_blank">
               KAIST
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="https://admission.kaist.ac.kr" target="_blank">
+            <Link href={Links.kaistAdmission} target="_blank">
               입학처
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="https://kainuri.kaist.ac.kr" target="_blank">
+            <Link href={Links.kainuri} target="_blank">
               카이누리
             </Link>
           </NavbarItem>
