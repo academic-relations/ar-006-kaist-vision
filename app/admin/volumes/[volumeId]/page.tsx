@@ -1,9 +1,10 @@
 import { Button } from "@nextui-org/react";
-import { createServerSupabase } from "../../../../utils/supabase/server";
-import { Article, Volume } from "../../../../utils/types";
+import { Article } from "../../../../utils/types";
 import ArticlesTable from "./table";
 import Link from "next/link";
 import { Links } from "../../../../utils/utils";
+import { cookies } from "next/headers";
+import { getArticles, getVolume } from "../../../../utils/supabase/actions";
 
 type Props = {
   params: {
@@ -12,9 +13,9 @@ type Props = {
 };
 
 export default async function Page(props: Props) {
-  const volumeId = Number(props.params.volumeId);
+  const volumeId = props.params.volumeId;
   const volume = await getVolume(volumeId);
-  const articles = await getArticles(volumeId);
+  const articles = await getArticles(Number(volumeId));
 
   return (
     <>
@@ -23,7 +24,10 @@ export default async function Page(props: Props) {
         <Button
           className="m-3"
           as={Link}
-          href={Links.createEditArticle(volumeId, getNextIndex(articles))}
+          href={Links.createEditArticle(
+            Number(volumeId),
+            getNextIndex(articles)
+          )}
         >
           새 기사 추가하기
         </Button>
@@ -32,26 +36,6 @@ export default async function Page(props: Props) {
       <ArticlesTable articles={articles} />
     </>
   );
-}
-
-async function getArticles(volumeId: number): Promise<Article[]> {
-  const supabase = createServerSupabase();
-  const { data } = await supabase
-    .from("articles")
-    .select("*")
-    .eq("volume_id", volumeId)
-    .order("index");
-  return data ?? [];
-}
-
-async function getVolume(volumeId: number): Promise<Volume> {
-  const supabase = createServerSupabase();
-  const { data } = await supabase
-    .from("volumes")
-    .select("*")
-    .eq("id", volumeId)
-    .single();
-  return data;
 }
 
 function getNextIndex(articles: Article[]) {

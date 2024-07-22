@@ -2,9 +2,10 @@ import { redirect } from "next/navigation";
 import { createServerSupabase } from "../../../utils/supabase/server";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
-import { Volume } from "../../../utils/types";
 import VolumesTable from "./table";
 import { Links } from "../../../utils/utils";
+import { cookies } from "next/headers";
+import { getVolumes } from "../../../utils/supabase/actions";
 
 type Props = {
   children: React.ReactNode;
@@ -34,10 +35,4 @@ export default async function Layout({ children }: Props) {
       </div>
     </>
   );
-}
-
-async function getVolumes(): Promise<Volume[]> {
-  const supabase = createServerSupabase();
-  const { data } = await supabase.from("volumes").select("*").order("id");
-  return data ?? [];
 }

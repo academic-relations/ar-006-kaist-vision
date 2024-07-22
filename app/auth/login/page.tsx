@@ -1,7 +1,27 @@
 import { Button, Input } from "@nextui-org/react";
-import { login } from "./actions";
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
+import { createServerSupabase } from "../../../utils/supabase/server";
 
 export default function LoginPage() {
+  async function handleSumbit(formData: FormData) {
+    "use server";
+    const data = {
+      email: formData.get("email") as string,
+      password: formData.get("password") as string,
+    };
+
+    const supabase = createServerSupabase();
+    const { error } = await supabase.auth.signInWithPassword(data);
+
+    if (error) {
+      redirect("/error");
+    }
+
+    revalidatePath("/", "layout");
+    redirect("/admin");
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
@@ -23,7 +43,7 @@ export default function LoginPage() {
             placeholder="Enter your password"
             className="mb-4"
           />
-          <Button formAction={login} type="submit">
+          <Button formAction={handleSumbit} type="submit">
             로그인
           </Button>
         </form>

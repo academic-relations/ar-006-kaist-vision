@@ -3,22 +3,14 @@ import { Input, Button } from "@nextui-org/react";
 import { createServerSupabase } from "../../../../../utils/supabase/server";
 import { redirect } from "next/navigation";
 import { Links } from "../../../../../utils/utils";
+import { cookies } from "next/headers";
+import { getVolume } from "../../../../../utils/supabase/actions";
 
 type Props = {
   params: {
     volumeId: string;
   };
 };
-
-async function getVolume(volumeId: string) {
-  const supabase = createServerSupabase();
-  const { data, error } = await supabase
-    .from("volumes")
-    .select("*")
-    .eq("id", volumeId)
-    .single();
-  return data;
-}
 
 export default async function Page(props: Props) {
   const volume = await getVolume(props.params.volumeId);

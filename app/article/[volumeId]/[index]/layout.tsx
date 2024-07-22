@@ -1,11 +1,15 @@
 import Link from "next/link";
-import { Article, Volume } from "../../../../utils/types";
+import { Article } from "../../../../utils/types";
 import { Button } from "@nextui-org/react";
 import styles from "./Layout.module.css";
 import TopButton from "../../../../components/top-button";
-import { createServerSupabase } from "../../../../utils/supabase/server";
 import VolumeSelect from "../../../../components/volume-select";
 import { Links } from "../../../../utils/utils";
+import {
+  getCategories,
+  getVisibleVolumes,
+} from "../../../../utils/supabase/actions";
+import { cookies } from "next/headers";
 
 type ArticleButtonProps = { title: string; href?: string };
 
@@ -29,7 +33,7 @@ type LayoutProps = {
 export default async function Layout(props: LayoutProps) {
   const currentVolume = Number(props.params.volumeId);
   const categories = await getCategories(currentVolume);
-  const volumes = await getVolumes();
+  const volumes = await getVisibleVolumes();
 
   return (
     <>
@@ -56,24 +60,4 @@ export default async function Layout(props: LayoutProps) {
       <TopButton />
     </>
   );
-}
-
-async function getCategories(volumeId: number) {
-  const supabase = createServerSupabase();
-  const { data } = await supabase
-    .from("articles")
-    .select("*")
-    .eq("volume_id", volumeId)
-    .order("index", { ascending: true });
-  return data ?? [];
-}
-
-async function getVolumes(): Promise<Volume[]> {
-  const supabase = createServerSupabase();
-  const { data } = await supabase
-    .from("volumes")
-    .select("*")
-    .eq("is_visible", true)
-    .order("id");
-  return data ?? [];
 }

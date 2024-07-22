@@ -2,8 +2,8 @@ import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import { Article, ArticleImage } from "../../utils/types";
 import Link from "next/link";
 import styles from "./home.module.css";
-import { createServerSupabase } from "../../utils/supabase/server";
 import { createImageUrl, Links } from "../../utils/utils";
+import { getArticles, getRecentVolume } from "../../utils/supabase/actions";
 
 export default async function Home() {
   const volume = await getRecentVolume();
@@ -86,25 +86,4 @@ export default async function Home() {
       <div className="h-32" />
     </div>
   );
-}
-
-async function getRecentVolume() {
-  const supabase = createServerSupabase();
-  const { data: volumes } = await supabase
-    .from("volumes")
-    .select("*")
-    .eq("is_visible", true)
-    .order("id", { ascending: false })
-    .limit(1);
-  return volumes ? volumes[0] : null;
-}
-
-async function getArticles(volumeId: number) {
-  const supabase = createServerSupabase();
-  const { data: articles } = await supabase
-    .from("articles")
-    .select("*")
-    .eq("volume_id", volumeId)
-    .order("index");
-  return articles as Article[];
 }

@@ -1,7 +1,27 @@
 import { Input, Button } from "@nextui-org/react";
-import { createVolume } from "./actions";
+import { cookies } from "next/headers";
+import { Links } from "../../../../utils/utils";
+import { redirect } from "next/navigation";
+import { createServerSupabase } from "../../../../utils/supabase/server";
 
 export default function Page() {
+  async function createVolume(formData: FormData) {
+    "use server";
+    const supabase = createServerSupabase();
+
+    const data = {
+      year: formData.get("year") as string,
+      name: formData.get("name") as string,
+    };
+
+    const { error } = await supabase.from("volumes").insert(data);
+    if (error) {
+      console.log(error);
+    } else {
+      redirect(Links.adminVolumes);
+    }
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
