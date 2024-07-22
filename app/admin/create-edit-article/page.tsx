@@ -302,33 +302,54 @@ export default function Page() {
             이미지 추가
           </Button>
         </div>
-        <Button
-          className="m-4"
-          variant="solid"
-          onClick={async () => {
-            const supabase = createClientSupabase();
-            const { error } = await supabase.from("articles").insert({
-              volume_id: volumeId,
-              index,
-              category,
-              header: {
-                title,
-                author,
-                caption,
-                image,
-                imageCaption,
-              },
-              body,
-            });
-            if (error) {
-              console.log(error);
-            } else {
-              router.push(`/admin/volumes/${volumeId}`);
-            }
-          }}
-        >
-          기사 업로드
-        </Button>
+        <div className="flex flex-row">
+          <Button
+            className="m-4"
+            variant="solid"
+            color="primary"
+            onClick={async () => {
+              const supabase = createClientSupabase();
+              const { error } = await supabase.from("articles").insert({
+                volume_id: volumeId,
+                index,
+                category,
+                header: {
+                  title,
+                  author,
+                  caption,
+                  image,
+                  imageCaption,
+                },
+                body,
+              });
+              if (error) {
+                console.log(error);
+              } else {
+                router.push(`/admin/volumes/${volumeId}`);
+                router.refresh();
+              }
+            }}
+          >
+            기사 업로드
+          </Button>
+          <Button
+            variant="bordered"
+            className="m-4"
+            onClick={() => {
+              if (
+                window.confirm(
+                  "정말로 취소하시겠습니까? 기사 작성 내용이 저장되지 않습니다."
+                )
+              ) {
+                router.push(`/admin/volumes/${volumeId}`);
+                router.refresh();
+                return;
+              }
+            }}
+          >
+            취소하기
+          </Button>
+        </div>
       </div>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
