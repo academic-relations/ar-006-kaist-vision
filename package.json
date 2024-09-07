@@ -13,7 +13,7 @@
     "@nextui-org/react": "^2.4.6",
     "@supabase/ssr": "^0.4.0",
     "@supabase/supabase-js": "^2.44.4",
-    "axios": "^1.7.2",
+    "axios": "^1.7.4",
     "framer-motion": "^11.3.8",
     "next": "14.2.5",
     "next-themes": "^0.3.0",
